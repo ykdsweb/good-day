@@ -1,5 +1,6 @@
 // pages/index.js
 import Link from "next/link";
+import Image from 'next/image';
 import { client } from "../../libs/client";
 import type { Article } from '../../types/article';
 
@@ -16,7 +17,7 @@ export default function Home({ articles }: Props) {
       <div className="">
         {articles.map(article => (
           <div className="" key={article.id}>
-            <img
+            <Image
               className=""
               src={article.eye_catch.url}
               alt="Sunset in the mountains"

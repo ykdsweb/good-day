@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import Image from 'next/image';
 import { client } from '../../../libs/client';
 import styles from '../../styles/Home.module.scss';
 import type { Article } from '../../../types/article';
@@ -12,9 +13,10 @@ export default function Article({ article }: Props) {
     <div className="">
       <div className="">
         <div className="">
-          <img
+          <Image
             className=""
             src={article.eye_catch.url}
+            alt=""
           />
           <div className="">
             <div className="">
