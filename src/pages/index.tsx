@@ -20,6 +20,8 @@ export default function Home({ articles }: Props) {
               className=""
               src={article.eye_catch.url}
               alt="Sunset in the mountains"
+              width="20%"
+              height="auto"
             />
             <div className="">
               <Link href={`/article/${article.id}`} passHref>
