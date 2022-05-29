@@ -1,7 +1,7 @@
 // pages/index.js
 import Link from "next/link";
-import type { Article } from '../../types/article';
 import { client } from "../../libs/client";
+import type { Article } from '../../types/article';
 
 type Props = {
   articles: Array<Article>;
