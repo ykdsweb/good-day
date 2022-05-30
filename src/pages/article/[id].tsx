@@ -17,6 +17,8 @@ export default function Article({ article }: Props) {
             className=""
             src={article.eye_catch.url}
             alt=""
+            width="500"
+            height="500"
           />
           <div className="">
             <div className="">
