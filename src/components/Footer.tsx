@@ -16,11 +16,11 @@ export default function Footer() {
           <a>
             <Image 
               className=""
-              src={'/img/OneStep_logo_01.png'}
+              src={'/media/OneStep_logo_01.png'}
               objectFit="contain"
               alt="imageFile"
-              width={240}
-              height={240}
+              width={80}
+              height={80}
             />
           </a>
         </Link>
