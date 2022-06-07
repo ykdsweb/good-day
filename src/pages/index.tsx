@@ -1,4 +1,3 @@
-// pages/index.js
 import Link from "next/link";
 import Image from 'next/image';
 import { client } from "../../libs/client";
