@@ -20,9 +20,10 @@ export default function Home({ articles }: Props) {
             <Image
               className=""
               src={article.eye_catch.url}
-              alt="Sunset in the mountains"
-              width="500"
-              height="500"
+              objectFit="contain"
+              alt="画像です。"
+              width={240}
+              height={240}
             />
             <div className="">
               <Link href={`/article/${article.id}`} passHref>
