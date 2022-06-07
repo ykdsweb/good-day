@@ -16,9 +16,10 @@ export default function Article({ article }: Props) {
           <Image
             className=""
             src={article.eye_catch.url}
-            alt=""
-            width="500"
-            height="500"
+            objectFit="contain"
+            alt="eyeCatch画像です。"
+            width=""
+            height=""
           />
           <div className="">
             <div className="">
