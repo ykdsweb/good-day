@@ -1,5 +1,6 @@
 import { strictEqual } from 'assert'
 import Link from 'next/link'
+import styles from '../../styles/Header.module.scss';
 
 const title: string = 'GOOD-DAY'
 const nav_00: string = 'Home'
@@ -11,7 +12,7 @@ const nav_05: string = 'Contact'
 
 export default function Header() {
   return (
-    <header className="">
+    <header className={styles.mainHeader}>
       <div className="">
         <Link href={'/'} passHref>
           <a className="">

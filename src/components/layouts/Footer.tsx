@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image';
+import styles from '../../styles/Footer.module.scss';
 
 const title: string = 'GOOD-DAY'
 const nav_00: string = 'ナビ00'
@@ -10,7 +11,7 @@ const nav_04: string = 'ナビ04'
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer className={styles.mainFooter}>
       <div className="">
         <Link href="">
           <a>
