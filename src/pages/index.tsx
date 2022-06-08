@@ -3,12 +3,13 @@ import Link from "next/link";
 import Image from 'next/image';
 import { client } from "../libs/client";
 import type { Article } from '../../types/article';
+import Button from "@material-ui/core/Button"
 
 type Props = {
   articles: Array<Article>;
 }
 
-export default function Home({ articles }: Props) {
+export default function Home({ articles }: Props)  {
   return (
     <>
       <h1 className="">
@@ -45,6 +46,7 @@ export default function Home({ articles }: Props) {
                 }}
               />
             </div>
+            <Button variant="contained">Default</Button>
           </div>
         ))}
       </div>
