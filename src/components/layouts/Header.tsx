@@ -2,11 +2,12 @@ import { strictEqual } from 'assert'
 import Link from 'next/link'
 
 const title: string = 'GOOD-DAY'
-const nav_00: string = 'ナビ00'
-const nav_01: string = 'ナビ01'
-const nav_02: string = 'ナビ02'
-const nav_03: string = 'ナビ03'
-const nav_04: string = 'ナビ04'  
+const nav_00: string = 'Home'
+const nav_01: string = 'Stylist'
+const nav_02: string = 'Service'
+const nav_03: string = 'Recruit'
+const nav_04: string = 'Company'
+const nav_05: string = 'Contact'  
 
 export default function Header() {
   return (
@@ -32,6 +33,9 @@ export default function Header() {
             </Link>
             <Link href={'/'} passHref>
                 <a className="">{nav_04}</a>
+            </Link>
+            <Link href={'/'} passHref>
+                <a className="">{nav_05}</a>
             </Link>
         </nav>
       </div>

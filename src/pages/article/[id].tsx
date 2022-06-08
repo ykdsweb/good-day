@@ -1,6 +1,7 @@
+// ここは記事単体のPageを表示している
 import { GetServerSideProps } from 'next';
 import Image from 'next/image';
-import { client } from '../../../libs/client';
+import { client } from '../../libs/client';
 import styles from '../../styles/Home.module.scss';
 import type { Article } from '../../../types/article';
 
@@ -17,9 +18,9 @@ export default function Article({ article }: Props) {
             className=""
             src={article.eye_catch.url}
             objectFit="contain"
-            alt="eyeCatch画像です。"
-            width=""
-            height=""
+            alt={(article.title) + "の画像です"}
+            width={240}
+            height={240}
           />
           <div className="">
             <div className="">
@@ -33,11 +34,14 @@ export default function Article({ article }: Props) {
               </div>
             </div>
           )}
-          <div className="">
-            <div className="">
-              {article.body}
+           <div className="">
+              {/* Prevent HTML tags from being output */}
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${article.body}`
+                }}
+              />
             </div>
-          </div>
         </div>
       </div>
     </div>
