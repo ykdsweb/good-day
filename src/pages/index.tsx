@@ -37,7 +37,12 @@ export default function Home({ articles }: Props) {
               )}
             </div>
             <div className="">
-              <p>{article.body}</p>
+              {/* Prevent HTML tags from being output */}
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${article.body}`
+                }}
+              />
             </div>
           </div>
         ))}
