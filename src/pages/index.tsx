@@ -1,6 +1,7 @@
+// これはTopPageを表示している
 import Link from "next/link";
 import Image from 'next/image';
-import { client } from "../../libs/client";
+import { client } from "../libs/client";
 import type { Article } from '../../types/article';
 
 type Props = {
@@ -20,7 +21,7 @@ export default function Home({ articles }: Props) {
               className=""
               src={article.eye_catch.url}
               objectFit="contain"
-              alt="画像です。"
+              alt={(article.title) + "の画像です"}
               width={240}
               height={240}
             />
