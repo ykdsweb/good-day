@@ -8,3 +8,11 @@
     width: 100%;
     z-index: 1;
 }
+.mainHeaderInner {
+    display: flex;
+    justify-content: space-between;
+}
+.mainNav {
+    display: flex;
+    justify-content: space-evenly;
+}

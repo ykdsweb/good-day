@@ -13,13 +13,18 @@ const nav_05: string = 'Contact'
 export default function Header() {
   return (
     <header className={styles.mainHeader}>
-      <div className="">
-        <Link href={'/'} passHref>
-          <a className="">
-            <span className="">{title}</span>
-          </a>
-        </Link>
-        <nav className="">
+      <div className={styles.mainHeaderInner}>
+          <Link href={'/'} passHref>
+            <a className="">
+              <span className="">{title}</span>
+            </a>
+          </Link>
+          <div className={styles.hamburgerMenu}>
+            <span className={styles.hamburgerMenuLine}></span>
+            <span className={styles.hamburgerMenuLineDummy}></span>
+          </div>
+      </div>
+      <nav className={styles.mainNav}>
             <Link href={'/'} passHref>
                 <a className="" >{nav_00}</a>
             </Link>
@@ -39,7 +44,6 @@ export default function Header() {
                 <a className="">{nav_05}</a>
             </Link>
         </nav>
-      </div>
     </header>
   )
 }
