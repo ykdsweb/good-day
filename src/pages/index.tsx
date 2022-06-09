@@ -4,14 +4,17 @@ import Image from 'next/image';
 import { client } from "../libs/client";
 import type { Article } from '../../types/article';
 import Button from "@material-ui/core/Button"
+import styles from '../styles/Home.module.scss';
 
 type Props = {
   articles: Array<Article>;
 }
 
+// 次回、ルーティングから
+
 export default function Home({ articles }: Props)  {
   return (
-    <>
+    <section className={styles.mainHome}>
       <h1 className="">
         記事一覧
       </h1>
@@ -38,8 +41,8 @@ export default function Home({ articles }: Props)  {
                 </span>
               )}
             </div>
+            {/* Prevent HTML tags from being output */}
             <div className="">
-              {/* Prevent HTML tags from being output */}
               <div
                 dangerouslySetInnerHTML={{
                   __html: `${article.body}`
@@ -50,7 +53,7 @@ export default function Home({ articles }: Props)  {
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

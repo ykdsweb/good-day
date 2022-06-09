@@ -1,30 +1,41 @@
 import Link from 'next/link'
 import Image from 'next/image';
-
-const title: string = 'GOOD-DAY'
-const nav_00: string = 'ナビ00'
-const nav_01: string = 'ナビ01'
-const nav_02: string = 'ナビ02'
-const nav_03: string = 'ナビ03'
-const nav_04: string = 'ナビ04'  
+import styles from '../../styles/Footer.module.scss';
 
 export default function Footer() {
   return (
-    <footer className="">
-      <div className="">
-        <Link href="">
-          <a>
-            <Image 
-              className=""
-              src={'/media/OneStep_logo_01.png'}
-              objectFit="contain"
-              alt="imageFile"
-              width={80}
-              height={80}
-            />
-          </a>
-        </Link>
+    <footer className={styles.mainFooter}>
+      <div className={styles.footerLogo}>
+        <div className={styles.footerLogoImg}>
+          <Link href="">
+              <a>
+                <Image 
+                  className=""
+                  src={'/media/GOOD-DAY_mainLogo_05.png'}
+                  objectFit="contain"
+                  alt="GOOD-DAY_MainLogo"
+                  width={64}
+                  height={64}
+                />
+              </a>
+            </Link>
+          </div>
+          <div className={styles.footerLogoImg}>
+            <Link href="">
+              <a>
+                <Image 
+                  className=""
+                  src={'/media/OneStep_logo_00.png'}
+                  objectFit="contain"
+                  alt="OneStep_MainLogo"
+                  width={64}
+                  height={64}
+                />
+              </a>
+            </Link>
+          </div>
       </div>
+      <p className={styles.footerCopyLight}>&copy; 2022 OneStep inc.</p>
     </footer>
   )
 }
