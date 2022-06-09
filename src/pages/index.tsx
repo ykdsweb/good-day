@@ -5,6 +5,7 @@ import { client } from "../libs/client";
 import type { Article } from '../../types/article';
 import Button from "@material-ui/core/Button"
 import styles from '../styles/Home.module.scss';
+import Slider from '../components/home/Slider';
 
 type Props = {
   articles: Array<Article>;
@@ -18,6 +19,7 @@ export default function Home({ articles }: Props)  {
       <h1 className="">
         記事一覧
       </h1>
+      <Slider />
       <div className="">
         {articles.map(article => (
           <div className="" key={article.id}>
