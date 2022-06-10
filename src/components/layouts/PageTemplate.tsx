@@ -1,12 +1,11 @@
-import Head from "next/head"
-import React from "react"
-import Header from "./Header"
-import Footer from "./Footer"
-import ScrollUp from "../utils/ScrollUp"
+import Head from "next/head";
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 interface PageTemplateProps {
-  children: React.ReactElement
-  title: string
+  children: React.ReactElement;
+  title: string;
 }
 
 const PageTemplate = ({ children, title }: PageTemplateProps) => {
@@ -18,10 +17,7 @@ const PageTemplate = ({ children, title }: PageTemplateProps) => {
       <header>
         <Header />
       </header>
-      <main>
-        {children}
-      </main>
-      <ScrollUp />
+      <main>{children}</main>
       <footer>
         <Footer />
       </footer>
@@ -29,7 +25,7 @@ const PageTemplate = ({ children, title }: PageTemplateProps) => {
         {`
           html,
           body {
-            background: #F5F5F5;
+            background: #f5f5f5;
             overflow-x: hidden;
             padding: 0 !important;
           }
@@ -45,7 +41,7 @@ const PageTemplate = ({ children, title }: PageTemplateProps) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default PageTemplate
+export default PageTemplate;
