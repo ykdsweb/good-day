@@ -1,22 +1,24 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import styles from "../../styles/Nav.module.scss";
 
 export default function Nav() {
   return (
     <>
       <nav className="flex flex-wrap items-center justify-between bg-blue-300 p-6">
         <div className="mr-6 flex shrink-0 items-center text-white">
-          <svg
-            className="mr-2 h-8 w-8 fill-current"
-            width="54"
-            height="54"
-            viewBox="0 0 54 54"
-            xmlns="http://www.w3.org/2000/svg"
-          ></svg>
-          <Link href={"/"} passHref>
-            <span className="text-xl font-semibold tracking-tight">
-              GOOD-DAY
-            </span>
+        <Link href="">
+            <a>
+              <Image
+                className={styles.navImage}
+                src={"/media/GOOD-DAY_mainLogo_05.png"}
+                objectFit="contain"
+                alt="GOOD-DAY_MainLogo"
+                width={64}
+                height={64}
+              />
+            </a>
           </Link>
         </div>
         <div className="block lg:hidden">

@@ -1,0 +1,9 @@
+.navImage {
+    background-image: url("/media/GOOD-DAY_mainLogo_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+ &:hover {
+    opacity: 0.8;
+ }
+}
