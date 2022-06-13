@@ -8,7 +8,7 @@ export default function Nav() {
     <>
       <nav className="flex flex-wrap items-center justify-between bg-blue-300 p-6">
         <div className="mr-6 flex shrink-0 items-center text-white">
-        <Link href={"/"}>
+          <Link href={"/"}>
             <a>
               <Image
                 className={styles.navImage}
