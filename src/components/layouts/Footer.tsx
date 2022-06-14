@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Footer.module.scss";
+import ReturnTopButton from "../layouts/ToTopButton";
 
 export default function Footer() {
   return (
     <footer className={styles.mainFooter}>
+      <ReturnTopButton />
       <div className={styles.footerLogo}>
         <div className={styles.footerLogoImg}>
           <Link href={"/"}>
