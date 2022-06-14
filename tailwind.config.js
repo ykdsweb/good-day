@@ -1,20 +1,10 @@
 module.exports = {
   mode: 'jit',
-  darkMode: false, // 'media' or 'class'
-  purge: {
-    content: [
-      './src/components/**/*.{js,ts,jsx,tsx}',
-    ],
-    options: {
-      // https://purgecss.com/safelisting.html#patterns
-      safelist: {
-        standard: [/^bg-/, /^text-/],
-      },
-    },
-  },
-  content: [],
+  mode: process.env.NODE_ENV ? 'jit' : undefined,
+  // content: [],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}
