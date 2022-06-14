@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Nav from "../../components/layouts/Nav";
 import styles from "../../styles/Header.module.scss";
 
 const title: string = "GOOD-DAY";
@@ -13,36 +13,12 @@ export default function Header() {
   return (
     <header className={styles.mainHeader}>
       <div className={styles.mainHeaderInner}>
-        <Link href={"/"} passHref>
-          <a className="">
-            <span className="">{title}</span>
-          </a>
-        </Link>
         <div className={styles.hamburgerMenu}>
           <span className={styles.hamburgerMenuLine}></span>
           <span className={styles.hamburgerMenuLineDummy}></span>
         </div>
       </div>
-      <nav className={styles.mainNav}>
-        <Link href={"/"} passHref>
-          <a className="">{nav_00}</a>
-        </Link>
-        <Link href={"/"} passHref>
-          <a className="">{nav_01}</a>
-        </Link>
-        <Link href={"/"} passHref>
-          <a className="">{nav_02}</a>
-        </Link>
-        <Link href={"/"} passHref>
-          <a className="">{nav_03}</a>
-        </Link>
-        <Link href={"/"} passHref>
-          <a className="">{nav_04}</a>
-        </Link>
-        <Link href={"/"} passHref>
-          <a className="">{nav_05}</a>
-        </Link>
-      </nav>
+      <Nav />
     </header>
   );
 }

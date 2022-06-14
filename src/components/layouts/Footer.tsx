@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.mainFooter}>
       <div className={styles.footerLogo}>
         <div className={styles.footerLogoImg}>
-          <Link href="">
+          <Link href={"/"}>
             <a>
               <Image
                 className=""
@@ -21,7 +21,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className={styles.footerLogoImg}>
-          <Link href="">
+          <Link href={"/"}>
             <a>
               <Image
                 className=""
@@ -34,6 +34,18 @@ export default function Footer() {
             </a>
           </Link>
         </div>
+      </div>
+      <div className={styles.footerInfoArea}>
+        <Link href={"/"}>
+          <a>
+            <p className={styles.footerInfo}>Privacy Policy</p>
+          </a>
+        </Link>
+        <Link href={"/"}>
+          <a>
+            <p className={styles.footerInfo}>Company Profile</p>
+          </a>
+        </Link>
       </div>
       <p className={styles.footerCopyLight}>&copy; 2022 OneStep inc.</p>
     </footer>

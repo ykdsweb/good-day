@@ -6,10 +6,26 @@
 .footerLogo {
     display: flex;
     justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 560px;
 }
 .footerLogoImg {
     margin: 2rem;
 }
+.footerInfoArea {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 560px;
+}
+.footerInfo {
+    color: #fafafa;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
 .footerCopyLight {
+    padding: 1rem;
     text-align: center;
 }
