@@ -12,12 +12,6 @@ const nav_05: string = "Contact";
 export default function Header() {
   return (
     <header className={styles.mainHeader}>
-      <div className={styles.mainHeaderInner}>
-        <div className={styles.hamburgerMenu}>
-          <span className={styles.hamburgerMenuLine}></span>
-          <span className={styles.hamburgerMenuLineDummy}></span>
-        </div>
-      </div>
       <Nav />
     </header>
   );
