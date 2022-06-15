@@ -12,7 +12,7 @@ type Props = {
 
 export default function Home({ articles }: Props) {
   return (
-    <section className={styles.mainHome}>
+    <div className={styles.mainHome}>
       <Slider />
       <h2 className="">Topics</h2>
       <div className={styles.articleArea}>
@@ -51,7 +51,7 @@ export default function Home({ articles }: Props) {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 
