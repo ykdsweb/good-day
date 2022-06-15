@@ -13,34 +13,40 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <section className={styles.mainHome}>
-      <h1 className="">記事一覧</h1>
       <Slider />
-      <div className="">
+      <h2 className="">Topics</h2>
+      <div className={styles.articleArea}>
         {articles.map((article) => (
-          <div className="" key={article.id}>
-            <Image
-              className=""
-              src={article.eye_catch.url}
-              objectFit="contain"
-              alt={article.title + "の画像です"}
-              width={240}
-              height={240}
-            />
-            <div className="">
-              <Link href={`/article/${article.id}`} passHref>
-                <a>{article.title}</a>
-              </Link>
+          <div className={styles.articleSingle} key={article.id}>
+            <div className={styles.articleFlex}>
+            <div className={styles.articleLeft}>
+              <div className={styles.articleTitle}>
+                <Link href={`/article/${article.id}`} passHref>
+                  <a>{article.title}</a>
+                </Link>
+              </div>
+              {/* Prevent HTML tags from being output */}
+              <div className={styles.articleBody}>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `${article.body}`,
+                  }}
+                />
+              </div>
+              <div className={styles.articleTag}>
+                {article.tag && <span className="">#{article.tag}</span>}
+              </div>
             </div>
-            <div className="">
-              {article.tag && <span className="">#{article.tag}</span>}
-            </div>
-            {/* Prevent HTML tags from being output */}
-            <div className="">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `${article.body}`,
-                }}
-              />
+            <div className={styles.articleRight}>
+              <Image
+                  className={styles.articleImage}
+                  src={article.eye_catch.url}
+                  objectFit="contain"
+                  alt={article.title + "の画像です"}
+                  width={240}
+                  height={240}
+                />
+              </div>
             </div>
           </div>
         ))}
