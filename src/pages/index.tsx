@@ -19,26 +19,26 @@ export default function Home({ articles }: Props) {
         {articles.map((article) => (
           <div className={styles.articleSingle} key={article.id}>
             <div className={styles.articleFlex}>
-            <div className={styles.articleLeft}>
-              <div className={styles.articleTitle}>
-                <Link href={`/article/${article.id}`} passHref>
-                  <a>{article.title}</a>
-                </Link>
+              <div className={styles.articleLeft}>
+                <div className={styles.articleTitle}>
+                  <Link href={`/article/${article.id}`} passHref>
+                    <a>{article.title}</a>
+                  </Link>
+                </div>
+                {/* Prevent HTML tags from being output */}
+                <div className={styles.articleBody}>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: `${article.body}`,
+                    }}
+                  />
+                </div>
+                <div className={styles.articleTag}>
+                  {article.tag && <span className="">#{article.tag}</span>}
+                </div>
               </div>
-              {/* Prevent HTML tags from being output */}
-              <div className={styles.articleBody}>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${article.body}`,
-                  }}
-                />
-              </div>
-              <div className={styles.articleTag}>
-                {article.tag && <span className="">#{article.tag}</span>}
-              </div>
-            </div>
-            <div className={styles.articleRight}>
-              <Image
+              <div className={styles.articleRight}>
+                <Image
                   className={styles.articleImage}
                   src={article.eye_catch.url}
                   objectFit="contain"
