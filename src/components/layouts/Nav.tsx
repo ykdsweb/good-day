@@ -5,7 +5,7 @@ import styles from "../../styles/Nav.module.scss";
 
 export default function Nav() {
   return (
-    <nav className={styles.mainNav}>
+    <div className={styles.mainNav}>
       <div className={styles.navImageArea}>
         <Link href={"/"}>
           <a>
@@ -46,9 +46,11 @@ export default function Nav() {
           </Link>
         </div>
       </div>
+
       <div className={styles.hamburgerMenu}>
         <div className={styles.hamburgerArea}></div>
       </div>
-    </nav>
+      
+    </div>
   );
 }
