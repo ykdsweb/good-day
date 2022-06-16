@@ -50,7 +50,6 @@ export default function Nav() {
       <div className={styles.hamburgerMenu}>
         <div className={styles.hamburgerArea}></div>
       </div>
-      
     </div>
   );
 }
