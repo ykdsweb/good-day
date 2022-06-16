@@ -46,7 +46,6 @@ export default function Nav() {
           </Link>
         </div>
       </div>
-
       <div className={styles.hamburgerMenu}>
         <div className={styles.hamburgerArea}></div>
       </div>
