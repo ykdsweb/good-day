@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
+import Features from "../components/service/Features";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import "../styles/globals.css";

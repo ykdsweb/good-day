@@ -44,14 +44,20 @@
 .articleArea {
   
 }
+.articleMainTitle {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 2rem;
+}
 .articleFlex {
   display: flex;
   justify-content: space-evenly;
 }
 .articleSingle {
   background-color: #fafafa;
-  border-radius: 4px;
-  box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.2);
+  border: solid 0.1px #eeeeee;
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
   width: 90%;
   height: 30%;
   margin: 0 auto;
@@ -60,9 +66,13 @@
 }
 .articleLeft {
   padding: 1rem;
-  width: 80%;
+  width: 70%;
+
+  @media screen and (max-width:767px) {
+    width: 60%;
+ }
 }
-.articleTitle {
+.articleSubTitle {
   font-size:24px;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -79,7 +89,12 @@
 }
 .articleRight {
   padding: 1rem;
-  width: 20%;
+  width: 30%;
+  text-align: center;
+
+  @media screen and (max-width:767px) {
+    width: 40%;
+ }
 }
 .articleImage {
   width: 240px;

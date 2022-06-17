@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
 import type { Article } from "../../types/article";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/Index.module.scss";
 import Slider from "../components/home/Slider";
 
 type Props = {
@@ -14,13 +14,13 @@ export default function Home({ articles }: Props) {
   return (
     <div className={styles.mainHome}>
       <Slider />
-      <h2 className="">Topics</h2>
       <div className={styles.articleArea}>
+      <h2 className={styles.articleMainTitle}>Topics</h2>
         {articles.map((article) => (
           <div className={styles.articleSingle} key={article.id}>
             <div className={styles.articleFlex}>
               <div className={styles.articleLeft}>
-                <div className={styles.articleTitle}>
+                <div className={styles.articleSubTitle}>
                   <Link href={`/article/${article.id}`} passHref>
                     <a>{article.title}</a>
                   </Link>

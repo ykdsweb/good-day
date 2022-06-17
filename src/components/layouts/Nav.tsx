@@ -28,7 +28,7 @@ export default function Nav() {
           <Link href={"/"} passHref>
             <a className={styles.navRowCharacterSingle}>Stylist</a>
           </Link>
-          <Link href={"/"} passHref>
+          <Link href={"/service"} passHref>
             <a className={styles.navRowCharacterSingle}>Searvice</a>
           </Link>
           <Link href={"/"} passHref>
