@@ -15,7 +15,7 @@ export default function Home({ articles }: Props) {
     <div className={styles.mainHome}>
       <Slider />
       <div className={styles.articleArea}>
-      <h2 className={styles.articleMainTitle}>Topics</h2>
+        <h2 className={styles.articleMainTitle}>Topics</h2>
         {articles.map((article) => (
           <div className={styles.articleSingle} key={article.id}>
             <div className={styles.articleFlex}>
