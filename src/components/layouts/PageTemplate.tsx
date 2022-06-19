@@ -12,7 +12,9 @@ const PageTemplate = ({ children, title }: PageTemplateProps) => {
   return (
     <>
       <Head>
-        <title>{title ? title : "Corporate Site Sample"}</title>
+        <title>
+          {title ? title : "倉敷市のシェアサロン|GOOD-DAY(グッディ)"}
+        </title>
       </Head>
       <header>
         <Header />

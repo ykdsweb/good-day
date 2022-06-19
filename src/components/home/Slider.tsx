@@ -30,7 +30,7 @@ export default function Slider() {
         <div>
           <Image
             className={styles.sliderImg}
-            src={`/media/GOOD-DAY_mainImage_01.jpg`}
+            src={`/media/main_test_00.jpg`}
             layout="responsive"
             objectFit="contain"
             alt="画像の画像です"
