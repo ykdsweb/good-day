@@ -1,10 +1,19 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/Nav.module.scss";
+import React, { useState } from "react";
 import Accordion from "../layouts/Accordion";
+import styles from "../../styles/Nav.module.scss";
 
-export default function Nav() {
+export default function Nav(props: any) {
+  const [openMenu, setOpenMenu] = useState(false);
+  console.log(openMenu);
+  const data = props.list;
+  console.log(data);
+
+  const menuFunction = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <div className={styles.mainNav}>
       <div className={styles.navImageArea}>
@@ -39,16 +48,14 @@ export default function Nav() {
             <a className={styles.navRowCharacterSingle}>Company</a>
           </Link>
         </div>
-        <div>
-          <Link href={"/"}>
-            <a href="#" className={styles.navContact}>
-              Contact
-            </a>
-          </Link>
-        </div>
       </div>
       <div className={styles.hamburgerMenu}>
-        <div className={styles.hamburgerArea}></div>
+        <div className={styles.hamburgerArea}>
+          <button
+            className={styles.hamburgerButton}
+            onClick={menuFunction}
+          ></button>
+        </div>
       </div>
     </div>
   );

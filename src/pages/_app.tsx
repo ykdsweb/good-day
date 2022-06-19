@@ -1,17 +1,22 @@
 import React, { useEffect } from "react";
-import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
 import Features from "../components/service/Features";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 
-// コンポーネントはこのページに追加していく
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <Header />
+        <title>{"タイトル"}</title>
+        <meta property="description" content={"description"} />
+        <meta property="og:title" content={"title"} />
+        <meta property="og:description" content={"description"} />
+        <meta
+          property="og:image"
+          content={`${process.env.SITE_URL}/ogp_large.png`}
+        />
       </Head>
       <Component {...pageProps} />
       <Footer />

@@ -51,7 +51,7 @@
       opacity: 0.8;
    }
 }
-.navContact {
+.navContent {
    border: solid 1px #333333;
    border-radius: 1rem;
    border-width: 1px;
@@ -72,11 +72,23 @@
    }
 }
 .hamburgerArea {
-   border: solid 1px red;
    border-radius: 1rem;
    height: 4rem;
    margin: 0 1rem;
    position: absolute;
       right: 0;
    width: 4rem;
+}
+.hamburgerButton {
+   background-image: url("/media/push_00.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 64px;
+   height: 64px;
+
+   &:active {
+   background-image: url("/media/push_01.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   }
 }
