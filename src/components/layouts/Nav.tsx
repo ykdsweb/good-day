@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Nav.module.scss";
+import Accordion from "../layouts/Accordion";
 
 export default function Nav() {
   return (

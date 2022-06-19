@@ -29,6 +29,12 @@ const Service: React.FC = () => {
       <Features />
       <Features />
       <Features />
+      <Features />
+      <Features />
+      <Features />
+      <Features />
+      <Features />
+      <Features />
     </>
   );
 };
