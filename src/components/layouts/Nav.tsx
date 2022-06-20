@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Accordion from "../layouts/Accordion";
+import Accordion from "./Accordion";
 import styles from "../../styles/Nav.module.scss";
 
 export default function Nav(props: any) {

@@ -5,7 +5,7 @@ import styles from "../../styles/Slider.module.scss";
 
 export default function Slider() {
   return (
-    <section className={styles.sliderArea}>
+    <div className={styles.sliderArea}>
       <Carousel
         indicatorIconButtonProps={{
           style: {
@@ -41,7 +41,7 @@ export default function Slider() {
         <div>
           <Image
             className=""
-            src={`/media/GOOD-DAY_mainImage_02.jpg`}
+            src={`/media/main_test_01.jpg`}
             layout="responsive"
             objectFit="contain"
             alt="画像の画像です"
@@ -52,7 +52,7 @@ export default function Slider() {
         <div>
           <Image
             className=""
-            src={`/media/GOOD-DAY_mainImage_03.jpg`}
+            src={`/media/main_test_02.jpg`}
             layout="responsive"
             objectFit="contain"
             alt="画像の画像です"
@@ -61,6 +61,6 @@ export default function Slider() {
           />
         </div>
       </Carousel>
-    </section>
+    </div>
   );
 }

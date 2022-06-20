@@ -2,9 +2,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import type { Article } from "../../types/article";
-import styles from "../styles/Index.module.scss";
+import Info from "../components/layouts/Info";
 import Slider from "../components/home/Slider";
+import styles from "../styles/Index.module.scss";
+import type { Article } from "../../types/article";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 type Props = {
@@ -54,6 +55,7 @@ export default function Home({ articles }: Props) {
             </div>
           ))}
         </div>
+        <Info />
       </div>
     </>
   );
