@@ -33,22 +33,22 @@ export default function HamburgerMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/stylist">
                 <a>Stylist</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/searvice">
                 <a>Searvice</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/recruit">
                 <a>Recruit</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/company">
                 <a>Company</a>
               </Link>
             </li>

@@ -1,4 +1,4 @@
-export type Article = {
+export type Stylist = {
     id: string;
     createdAt: string;
     updatedAt: string;

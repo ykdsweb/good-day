@@ -1,3 +1,5 @@
+// このページでarticle, stylist(記事情報)を持ってきている
+
 import { createClient } from 'microcms-js-sdk';
 
 export const client = createClient({
