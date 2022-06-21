@@ -16,9 +16,8 @@ export default function Stylist({ stylists }: Props) {
     <>
       <HamburgerMenu />
       <div className={styles.mainHome}>
-        <Slider />
         <div className={styles.articleArea}>
-          <h2 className={styles.articleMainTitle}>Topics</h2>
+          <h2 className={styles.articleMainTitle}>Stylists</h2>
           {stylists.map((stylist) => (
             <div className={styles.articleSingle} key={stylist.id}>
               <div className={styles.articleFlex}>

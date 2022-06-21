@@ -12,6 +12,5 @@ export type Stylist = {
       width: number;
     };
     tag: string;
-    html: string;
   };
   
