@@ -2,8 +2,9 @@
 import { GetServerSideProps } from "next";
 import Image from "next/image";
 import { client } from "../../libs/client";
-import styles from "../../styles/Home.module.scss";
 import type { Stylist } from "../../../types/stylist";
+import styles from "../../styles/Stylist.module.scss";
+import HamburgerMenu from "../../components/layouts/HamburgerMenu";
 
 type Props = {
   stylist: Stylist;
@@ -11,36 +12,39 @@ type Props = {
 
 export default function Stylist({ stylist }: Props) {
   return (
-    <div className="">
-      <div className="">
+    <>
+      <HamburgerMenu />
+      <div className={styles.stylistArea}>
         <div className="">
-          <Image
-            className=""
-            src={stylist.eye_catch.url}
-            objectFit="contain"
-            alt={stylist.title + "の画像です"}
-            width={240}
-            height={240}
-          />
           <div className="">
-            <div className="">{stylist.title}</div>
-          </div>
-          {stylist.tag && (
-            <div className="">
-              <div className="">#{stylist.tag}</div>
-            </div>
-          )}
-          <div className="">
-            {/* Prevent HTML tags from being output */}
-            <div
-              dangerouslySetInnerHTML={{
-                __html: `${stylist.body}`,
-              }}
+            <Image
+              className=""
+              src={stylist.eye_catch.url}
+              objectFit="contain"
+              alt={stylist.title + "の画像です"}
+              width={240}
+              height={240}
             />
+            <div className="">
+              <div className="">{stylist.title}</div>
+            </div>
+            {stylist.tag && (
+              <div className="">
+                <div className="">#{stylist.tag}</div>
+              </div>
+            )}
+            <div className="">
+              {/* Prevent HTML tags from being output */}
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${stylist.body}`,
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
