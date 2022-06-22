@@ -2,9 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import Slider from "../components/home/Slider";
-import styles from "../styles/Index.module.scss";
 import type { Stylist } from "../../types/stylist";
+import styles from "../styles/Stylist.module.scss";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 type Props = {
@@ -16,42 +15,38 @@ export default function Stylist({ stylists }: Props) {
     <>
       <HamburgerMenu />
       <div className={styles.mainHome}>
-        <div className={styles.articleArea}>
-          <h2 className={styles.articleMainTitle}>Stylists</h2>
-          {stylists.map((stylist) => (
-            <div className={styles.articleSingle} key={stylist.id}>
-              <div className={styles.articleFlex}>
-                <div className={styles.articleLeft}>
-                  <div className={styles.articleSubTitle}>
-                    <Link href={`/stylist/${stylist.id}`} passHref>
-                      <a>{stylist.title}</a>
-                    </Link>
-                  </div>
-                  {/* Prevent HTML tags from being output */}
-                  <div className={styles.articleBody}>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `${stylist.body}`,
-                      }}
+        <div className={styles.stylistArea}>
+          <h2 className={styles.stylistMainTitle}>Stylist</h2>
+          <div className={styles.stylistMainTitleText}>スタイリスト一覧</div>
+          <div className={styles.stylistColumn}>
+            {stylists.map((stylist) => (
+              <div className={styles.stylistSingle} key={stylist.id}>
+                <Link
+                  className={styles.stylistImage}
+                  href={`/stylist/${stylist.id}`}
+                  passHref
+                >
+                  <a>
+                    <Image
+                      src={stylist.eye_catch.url}
+                      objectFit="contain"
+                      alt={stylist.title + "の画像です"}
+                      width={1000}
+                      height={1000}
                     />
-                  </div>
-                  <div className={styles.articleTag}>
-                    {stylist.tag && <span className="">#{stylist.tag}</span>}
-                  </div>
+                  </a>
+                </Link>
+                <div className={styles.stylistSubTitle}>
+                  <Link href={`/stylist/${stylist.id}`} passHref>
+                    <a>{stylist.title}</a>
+                  </Link>
                 </div>
-                <div className={styles.articleRight}>
-                  <Image
-                    className={styles.articleImage}
-                    src={stylist.eye_catch.url}
-                    objectFit="contain"
-                    alt={stylist.title + "の画像です"}
-                    width={240}
-                    height={240}
-                  />
+                <div className={styles.stylistTag}>
+                  {stylist.tag && <span className="">#{stylist.tag}</span>}
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </>

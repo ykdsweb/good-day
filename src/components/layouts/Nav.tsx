@@ -35,16 +35,16 @@ export default function Nav(props: any) {
           <Link href={"/"} passHref>
             <a className={styles.navRowCharacterSingle}>Home</a>
           </Link>
-          <Link href={"/"} passHref>
+          <Link href={"/stylist"} passHref>
             <a className={styles.navRowCharacterSingle}>Stylist</a>
           </Link>
           <Link href={"/service"} passHref>
             <a className={styles.navRowCharacterSingle}>Searvice</a>
           </Link>
-          <Link href={"/"} passHref>
+          <Link href={"/recruit"} passHref>
             <a className={styles.navRowCharacterSingle}>Recruit</a>
           </Link>
-          <Link href={"/"} passHref>
+          <Link href={"/campany"} passHref>
             <a className={styles.navRowCharacterSingle}>Company</a>
           </Link>
         </div>
