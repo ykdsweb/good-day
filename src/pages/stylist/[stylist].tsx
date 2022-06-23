@@ -7,6 +7,19 @@ import type { Stylist } from "../../../types/stylist";
 import styles from "../../styles/Detail.module.scss";
 import HamburgerMenu from "../../components/layouts/HamburgerMenu";
 
+import Katayama from "../../components/menu/Katayama";
+import Tahara from "../../components/menu/Tahara";
+import Isomura from "../../components/menu/Isomura";
+import Maeda from "../../components/menu/Maeda";
+import Tanabe from "../../components/menu/Tanabe";
+import Kanda from "../../components/menu/Kanda";
+import Fujii from "../../components/menu/Fujii";
+import Ikemoto from "../../components/menu/Ikemoto";
+import Imaishi from "../../components/menu/Imaishi";
+import Fujiwara from "../../components/menu/Fujiwara";
+import Tsuchida from "../../components/menu/Tsuchida";
+import Ono from "../../components/menu/Ono";
+
 type Props = {
   stylist: Stylist;
 };
@@ -21,6 +34,7 @@ export default function Stylist({ stylist }: Props) {
             <h2 className={styles.detailMainTitle}>Stylist</h2>
           </a>
         </Link>
+
         <div className={styles.detailFlex}>
           <div className={styles.detailImage}>
             <Image
@@ -102,6 +116,23 @@ export default function Stylist({ stylist }: Props) {
               height={250}
             />
           </div>
+        </div>
+        {/* ここにstylistIdを認識して、各自のメニューを表示します。 */}
+        <div>{stylist.stylist_id}</div>
+        <div>
+          {stylist.stylist_id == 1 ? <Katayama /> : <></>}
+          {stylist.stylist_id == 2 ? <Tahara /> : <></>}
+          {stylist.stylist_id == 3 ? <Isomura /> : <></>}
+          {stylist.stylist_id == 4 ? <Maeda /> : <></>}
+          {stylist.stylist_id == 5 ? <Tanabe /> : <></>}
+          {stylist.stylist_id == 6 ? <Kanda /> : <></>}
+          {stylist.stylist_id == 7 ? <Fujii /> : <></>}
+          {stylist.stylist_id == 8 ? <Ikemoto /> : <></>}
+          {stylist.stylist_id == 9 ? <Imaishi /> : <></>}
+          {stylist.stylist_id == 10 ? <Fujiwara /> : <></>}
+          {stylist.stylist_id == 11 ? <Tsuchida /> : <></>}
+          {stylist.stylist_id == 12 ? <Ono /> : <></>}
+          {!stylist.stylist_id && <></>}
         </div>
         <Link href={stylist.url}>
           <a>
