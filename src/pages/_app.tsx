@@ -3,6 +3,7 @@ import Footer from "../components/layouts/Footer";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
+import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           content={`${process.env.SITE_URL}/ogp_large.png`}
         />
       </Head>
+      <HamburgerMenu />
       <Component {...pageProps} />
       <Footer />
     </>
