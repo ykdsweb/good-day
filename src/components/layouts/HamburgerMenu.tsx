@@ -38,8 +38,8 @@ export default function HamburgerMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/searvice">
-                <a>Searvice</a>
+              <Link href="/service">
+                <a>Service</a>
               </Link>
             </li>
             <li>
@@ -86,7 +86,7 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/stylist">
               <a>
                 <p className={styles.mainTitle}>Stylist</p>
                 <p className={styles.subTitle}>スタイリスト</p>
@@ -94,15 +94,15 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/service">
               <a>
-                <p className={styles.mainTitle}>Searvice</p>
+                <p className={styles.mainTitle}>Service</p>
                 <p className={styles.subTitle}>サービス</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/recruit">
               <a>
                 <p className={styles.mainTitle}>Recruit</p>
                 <p className={styles.subTitle}>リクルート</p>
@@ -110,7 +110,7 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/company">
               <a>
                 <p className={styles.mainTitle}>Company</p>
                 <p className={styles.subTitle}>運営会社</p>

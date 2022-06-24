@@ -39,7 +39,7 @@ export default function Nav(props: any) {
             <a className={styles.navRowCharacterSingle}>Stylist</a>
           </Link>
           <Link href={"/service"} passHref>
-            <a className={styles.navRowCharacterSingle}>Searvice</a>
+            <a className={styles.navRowCharacterSingle}>service</a>
           </Link>
           <Link href={"/recruit"} passHref>
             <a className={styles.navRowCharacterSingle}>Recruit</a>

@@ -4,6 +4,7 @@ export type Stylist = {
     updatedAt: string;
     publishedAt: string;
     revisedAt: string;
+    stylist_id: number;
     eye_catch: {
       url: string;
       height: number;
