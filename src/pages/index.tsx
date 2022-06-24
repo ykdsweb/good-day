@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import Slider from "../components/home/Slider";
+import Slider from "../components/index/Slider";
 import styles from "../styles/Index.module.scss";
 import type { Article } from "../../types/article";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
@@ -61,7 +61,10 @@ export default function Home({ articles }: Props) {
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "articles" });
+  const data = await client.get({
+    endpoint: "articles",
+    queries: { limit: 20, offset: 0 },
+  });
 
   return {
     props: {

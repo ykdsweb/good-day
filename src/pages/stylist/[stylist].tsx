@@ -6,19 +6,19 @@ import { client } from "../../libs/client";
 import type { Stylist } from "../../../types/stylist";
 import styles from "../../styles/Detail.module.scss";
 import HamburgerMenu from "../../components/layouts/HamburgerMenu";
-
+// 各スタイリストのMenuを読み込む
 import Katayama from "../../components/menu/Katayama";
-import Tahara from "../../components/menu/Tahara";
-import Isomura from "../../components/menu/Isomura";
-import Maeda from "../../components/menu/Maeda";
-import Tanabe from "../../components/menu/Tanabe";
-import Kanda from "../../components/menu/Kanda";
+import Mika from "../../components/menu/Mika";
+import Nozomi from "../../components/menu/Nozomi";
+import Natsuki from "../../components/menu/Natsuki";
+import Dai from "../../components/menu/Dai";
+import John from "../../components/menu/John";
 import Fujii from "../../components/menu/Fujii";
 import Ikemoto from "../../components/menu/Ikemoto";
-import Imaishi from "../../components/menu/Imaishi";
-import Fujiwara from "../../components/menu/Fujiwara";
-import Tsuchida from "../../components/menu/Tsuchida";
-import Ono from "../../components/menu/Ono";
+import Mai from "../../components/menu/Mai";
+import Yuka from "../../components/menu/Yuka";
+import Maho from "../../components/menu/Maho";
+import Nami from "../../components/menu/Nami";
 
 type Props = {
   stylist: Stylist;
@@ -70,6 +70,11 @@ export default function Stylist({ stylist }: Props) {
                   }}
                 />
               </div>
+              <Link href={stylist.url}>
+                <a>
+                  <p className={styles.stylistDetailUrl}>指名してWeb予約する</p>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -117,21 +122,21 @@ export default function Stylist({ stylist }: Props) {
             />
           </div>
         </div>
-        {/* ここにstylistIdを認識して、各自のメニューを表示します。 */}
+        {/* ここでstylistIdを認識して、各自のメニューを表示します。 */}
         <div>{stylist.stylist_id}</div>
         <div>
           {stylist.stylist_id == 1 ? <Katayama /> : <></>}
-          {stylist.stylist_id == 2 ? <Tahara /> : <></>}
-          {stylist.stylist_id == 3 ? <Isomura /> : <></>}
-          {stylist.stylist_id == 4 ? <Maeda /> : <></>}
-          {stylist.stylist_id == 5 ? <Tanabe /> : <></>}
-          {stylist.stylist_id == 6 ? <Kanda /> : <></>}
+          {stylist.stylist_id == 2 ? <Mika /> : <></>}
+          {stylist.stylist_id == 3 ? <Nozomi /> : <></>}
+          {stylist.stylist_id == 4 ? <Natsuki /> : <></>}
+          {stylist.stylist_id == 5 ? <Dai /> : <></>}
+          {stylist.stylist_id == 6 ? <John /> : <></>}
           {stylist.stylist_id == 7 ? <Fujii /> : <></>}
           {stylist.stylist_id == 8 ? <Ikemoto /> : <></>}
-          {stylist.stylist_id == 9 ? <Imaishi /> : <></>}
-          {stylist.stylist_id == 10 ? <Fujiwara /> : <></>}
-          {stylist.stylist_id == 11 ? <Tsuchida /> : <></>}
-          {stylist.stylist_id == 12 ? <Ono /> : <></>}
+          {stylist.stylist_id == 9 ? <Mai /> : <></>}
+          {stylist.stylist_id == 10 ? <Yuka /> : <></>}
+          {stylist.stylist_id == 11 ? <Maho /> : <></>}
+          {stylist.stylist_id == 12 ? <Nami /> : <></>}
           {!stylist.stylist_id && <></>}
         </div>
         <Link href={stylist.url}>
@@ -139,6 +144,13 @@ export default function Stylist({ stylist }: Props) {
             <p className={styles.detailUrl}>指名してWeb予約する</p>
           </a>
         </Link>
+        <div className={styles.detailOthers}>
+          <Link href={"/stylist"}>
+            <a>
+              <h2 className="">他のStylistも見る</h2>
+            </a>
+          </Link>
+        </div>
       </div>
     </>
   );

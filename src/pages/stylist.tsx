@@ -1,4 +1,5 @@
 // これはTopPageを表示している
+import Router from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
@@ -44,6 +45,13 @@ export default function Stylist({ stylists }: Props) {
                 <div className={styles.stylistTag}>
                   {stylist.tag && <span className="">#{stylist.tag}</span>}
                 </div>
+                <Link href={stylist.url}>
+                  <a>
+                    <p className={styles.stylistDetailUrl}>
+                      指名してWeb予約する
+                    </p>
+                  </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -55,7 +63,10 @@ export default function Stylist({ stylists }: Props) {
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "stylists" });
+  const data = await client.get({
+    endpoint: "stylists",
+    queries: { limit: 20, offset: 0 },
+  });
 
   return {
     props: {

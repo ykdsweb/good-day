@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Imaishi() {
+export default function Mai() {
   return (
     <>
       <div>

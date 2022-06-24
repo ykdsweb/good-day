@@ -10,30 +10,30 @@
     font-size: 32px;
     font-weight: bold;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding: 3rem 0 1rem 0;
     width: 90%;
 }
 .menuDetail {
     font-size: 16px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
     width: 90%;
 }
 .menuTabl {
-    margin: 20px auto;
+    margin: 1rem auto;
 }
 .menuTableTr {
     width: 100%;
 }
 .menuTableTh {
-    background: #e9727e;
+    background: #FEF2E7;
     border: solid 1px #ccc;
-    color: #fff;
-    padding: 10px;
+    color: #333333;
+    padding: 1rem;
 }
 .menuTableTd {
     border: solid 1px #ccc;
-    padding: 10px;
+    padding: 1rem;
 }
    
   @media screen and (max-width: 767px) {
