@@ -9,14 +9,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>{"タイトル"}</title>
-        <meta property="description" content={"description"} />
-        <meta property="og:title" content={"title"} />
-        <meta property="og:description" content={"description"} />
+        <title>{"GOOD-DAY(グッディ)|岡山県倉敷市の個室シェアサロン"}</title>
         <meta
-          property="og:image"
-          content={`${process.env.SITE_URL}/ogp_large.png`}
+          property="description"
+          content={
+            "フリーランス美容師として活躍したいスタイリストさんへ。岡山・倉敷エリアで独立するならGOOD-DAY。グッディなら今よりもっと自分らしく働けます。"
+          }
         />
+        <meta property="" content={"title"} />
+        <meta property="" content={"description"} />
       </Head>
       <HamburgerMenu />
       <Component {...pageProps} />

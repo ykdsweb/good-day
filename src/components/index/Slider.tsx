@@ -5,7 +5,7 @@ import styles from "../../styles/Slider.module.scss";
 
 export default function Slider() {
   return (
-    <div className={styles.sliderArea}>
+    <div className="">
       <Carousel
         indicatorIconButtonProps={{
           style: {
@@ -29,7 +29,7 @@ export default function Slider() {
       >
         <div>
           <Image
-            className={styles.sliderImg}
+            className=""
             src={`/media/main_test_00.jpg`}
             layout="responsive"
             objectFit="contain"

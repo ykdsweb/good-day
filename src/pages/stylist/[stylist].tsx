@@ -123,8 +123,8 @@ export default function Stylist({ stylist }: Props) {
           </div>
         </div>
         {/* ここでstylistIdを認識して、各自のメニューを表示します。 */}
-        <div>{stylist.stylist_id}</div>
         <div>
+          {!stylist.stylist_id && <></>}
           {stylist.stylist_id == 1 ? <Katayama /> : <></>}
           {stylist.stylist_id == 2 ? <Mika /> : <></>}
           {stylist.stylist_id == 3 ? <Nozomi /> : <></>}
@@ -137,8 +137,13 @@ export default function Stylist({ stylist }: Props) {
           {stylist.stylist_id == 10 ? <Yuka /> : <></>}
           {stylist.stylist_id == 11 ? <Maho /> : <></>}
           {stylist.stylist_id == 12 ? <Nami /> : <></>}
-          {!stylist.stylist_id && <></>}
         </div>
+        <p className={styles.menuDetail}>
+          ※所要時間につきましては、当日の予約状況により変動する可能性もございます。
+        </p>
+        <p className={styles.menuDetail}>
+          ※上記メニュー意外にもキャンペーン価格やセットメニューがございます。詳しい内容はスタイリストまでご連絡ください。
+        </p>
         <Link href={stylist.url}>
           <a>
             <p className={styles.detailUrl}>指名してWeb予約する</p>

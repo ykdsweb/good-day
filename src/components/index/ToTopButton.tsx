@@ -50,7 +50,12 @@ export default function ToTopButton() {
   return (
     <>
       <button
-        className={styles.toTopButton}
+        className={styles.toTopButtonPC}
+        style={style}
+        onClick={returnTop}
+      ></button>
+      <button
+        className={styles.toTopButtonSP}
         style={style}
         onClick={returnTop}
       ></button>

@@ -1,16 +1,39 @@
-.toTopButton {
+.toTopButtonPC {
     background-image: url("/media/GOOD-DAY_mainLogo_05.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     right: 2rem;
     bottom: 8rem;
-    width: 120px;
-    height: 120px;
+    width: 64px;
+    height: 64px;
     z-index: 2;
 
     &:hover {
         opacity: 0.4;
         filter: drop-shadow(1px 1px 12px #ff69b4);
+    }
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+.toTopButtonSP {
+    display: none;
+
+    @media screen and (max-width:767px) {
+        background-image: url("/media/GOOD-DAY_mainLogo_05.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        right: 2rem;
+        bottom: 8rem;
+        width: 64px;
+        height: 64px;
+        z-index: 2;
+
+        &:hover {
+            opacity: 0.4;
+            filter: drop-shadow(1px 1px 12px aqua);
+        }
     }
 }
