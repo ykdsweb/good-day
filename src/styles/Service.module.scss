@@ -1,13 +1,34 @@
 .features {
-    margin-top: 8rem;
-    width: 100%;
+    margin: 6.4rem auto;
+    width: 80%;
     height: auto;
     padding: 2rem;
 }
 .featuresTitle {
-    background: red;
-    margin-bottom: 2rem;
+    border-bottom: solid 1px #333333;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+.featuresSubTitle {
+    font-size: 16px;
+    margin: 2rem 0 4rem;
 }
 .featuresDescription {
     letter-spacing: 1.0;
+    margin: 2rem 0 8rem;
+}
+.returnToTop {
+    background-color: #eeeeee;
+    border-radius: 32px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 4rem;
+    text-align: center;
+    padding: 1rem;
+    width: 40%;
+
+    @media (max-width: 767px) {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
 }
