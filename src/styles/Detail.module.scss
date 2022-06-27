@@ -1,5 +1,8 @@
 // ━━━━━━━━━━━━━━━━━━━━
-// [stylist].tsxのcss
+// 404.tsx
+// [stylist].tsx
+// [id].tsx
+// のcss
 // ━━━━━━━━━━━━━━━━━━━━
 
 // detail (詳細)
@@ -8,6 +11,7 @@
     padding: 1rem;
 }
 .detailImage {
+    margin: 0 auto;
     text-align: center;
     width: 60%;
 
@@ -61,6 +65,7 @@
         text-align: center;
         margin: 0 auto;
         overflow: hidden;
+        padding-bottom: 1rem;
         width: 90%;
     }
 }
@@ -72,6 +77,7 @@
         text-align: center;
         margin: 0 auto;
         overflow: hidden;
+        padding-bottom: 1rem;
         width: 90%;
     }
 }
@@ -83,7 +89,16 @@
 }
 .detailBody {
     margin: 2rem auto 4rem;
-    width: 90%;
+    width: 100%;
+}
+.detailBody1 {
+    background-color: #fafafa;
+    border: solid 0.1px #eeeeee;
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
 }
 .detailStyle {
     display: flex;
@@ -97,7 +112,10 @@
     }
 }
 .detailStyleImage {
-
+    text-align: center;
+    height: auto;
+    margin: 2rem auto;
+    width: 100%;
 }
 .detailUrl {
     color: #333333;
@@ -157,4 +175,26 @@
     margin: 0 auto;
     padding: 0 0 1rem 0;
     width: 90%;
+}
+// ━━━━━━━━━━━━━━━━━━━━
+//   404用のcss
+// ━━━━━━━━━━━━━━━━━━━━
+.detail404Text {
+    margin: 0 atuo;
+    text-align: center;
+    padding: 1rem;
+}
+.detail404Return {
+    background-color: #eeeeee;
+    border-radius: 32px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 4rem;
+    text-align: center;
+    padding: 1rem;
+    width: 40%;
+
+    @media (max-width: 767px) {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
 }
