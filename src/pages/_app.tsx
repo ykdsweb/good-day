@@ -16,6 +16,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             "フリーランス美容師として活躍したいスタイリストさんへ。岡山・倉敷エリアで独立するならGOOD-DAY。グッディなら今よりもっと自分らしく働けます。"
           }
         />
+        <meta name="robots" content="noindex" />
         <meta property="" content={"title"} />
         <meta property="" content={"description"} />
       </Head>
