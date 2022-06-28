@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/Info.module.scss";
+import styles from "../../styles/Layouts/Info.module.scss";
 
 export default function Info() {
   return (

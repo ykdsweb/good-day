@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/Accordion.module.scss";
+import styles from "../../styles/Layouts/Accordion.module.scss";
 
 export default function Accordion() {
   return (

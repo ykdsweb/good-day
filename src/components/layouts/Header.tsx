@@ -1,5 +1,5 @@
 import Nav from "../../components/layouts/Nav";
-import styles from "../../styles/Header.module.scss";
+import styles from "../../styles/Layouts/Header.module.scss";
 
 const title: string = "GOOD-DAY";
 const nav_00: string = "Home";

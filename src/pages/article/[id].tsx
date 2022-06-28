@@ -18,7 +18,6 @@ export default function Article({ article }: Props) {
           <h2 className={styles.detailMainTitle}>Topics</h2>
         </a>
       </Link>
-
       <div className="">
         <div className={styles.detailStyleImage}>
           <Image
@@ -48,12 +47,12 @@ export default function Article({ article }: Props) {
             />
           </div>
           <div className={styles.detailOthers}>
-          <Link href={"/"}>
-            <a>
-              <h2 className="">Topに戻る</h2>
-            </a>
-          </Link>
-        </div>
+            <Link href={"/"}>
+              <a>
+                <h2 className="">Topに戻る</h2>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -2,7 +2,6 @@ import Link from "next/link";
 import styles from "../../styles/Service.module.scss";
 
 const Features: React.FC = () => {
-
   return (
     <>
       <div className={styles.features}>
@@ -31,6 +30,6 @@ const Features: React.FC = () => {
       </div>
     </>
   );
-}
+};
 
 export default Features;
