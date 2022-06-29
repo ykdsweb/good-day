@@ -1,0 +1,25 @@
+.mainArea {
+    margin: 6.4rem auto 0;
+    width: 80%;
+    @media screen and (max-width:767px) {
+        width: 90%;
+     }
+}
+.mainTitle {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+.subTitle {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+.mainTitleArea {
+    margin: 2rem 0;
+}
+.mainImage{
+    text-align: center;
+}
