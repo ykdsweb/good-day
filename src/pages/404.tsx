@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Detail.module.scss";
+import styles from "../styles/Stylist/Detail.module.scss";
 
 export default function Custom404() {
   return (
