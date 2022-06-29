@@ -1,6 +1,6 @@
 // 押すとTopにスクロールするボタン
 import { useEffect, useState } from "react";
-import styles from "../../styles/ToTopButton.module.scss";
+import styles from "../../styles/Layouts/ToTopButton.module.scss";
 
 export default function ToTopButton() {
   const [isButtonActive, setIsButtonActive] = useState(false);

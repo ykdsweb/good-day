@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { client } from "../../libs/client";
 import type { Stylist } from "../../../types/stylist";
-import styles from "../../styles/Detail.module.scss";
+import styles from "../../styles/Stylist/Detail.module.scss";
 import HamburgerMenu from "../../components/layouts/HamburgerMenu";
 // 各スタイリストのMenuを読み込む
 import Katayama from "../../components/menu/Katayama";

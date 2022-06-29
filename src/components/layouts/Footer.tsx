@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/Footer.module.scss";
-import ToTopButton from "../index/ToTopButton";
+import styles from "../../styles/Layouts/Footer.module.scss";
+import ToTopButton from "../home/ToTopButton";
 
 export default function Footer() {
   return (

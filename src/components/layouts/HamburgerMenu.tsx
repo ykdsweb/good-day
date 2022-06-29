@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import styles from "../../styles/HamburgerMenu.module.scss";
+import styles from "../../styles/Layouts/HamburgerMenu.module.scss";
 
 export default function HamburgerMenu() {
   const [openMenu, setOpenMenu] = useState(false);

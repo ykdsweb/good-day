@@ -2,8 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import Slider from "../components/index/Slider";
-import styles from "../styles/Index.module.scss";
+import Slider from "../components/home/Slider";
+import styles from "../styles/Home.module.scss";
 import type { Article } from "../../types/article";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 

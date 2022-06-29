@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
-import styles from "../../styles/Slider.module.scss";
+import styles from "../../styles/Layouts/Slider.module.scss";
 
 export default function Slider() {
   return (
