@@ -3,10 +3,25 @@
     width: 80%;
     height: auto;
     padding: 2rem;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+.featuresMainTitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 2rem;
+    text-align: center;
+}
+.featuresMainSubTitle {
+    margin: 1rem 0 4rem 0;
+    text-align: center;
 }
 .featuresTitle {
     border-bottom: solid 1px #333333;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     margin: 2rem 0;
 }
