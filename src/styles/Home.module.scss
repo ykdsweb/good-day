@@ -54,6 +54,10 @@
 .articleFlex {
   display: flex;
   justify-content: space-evenly;
+
+  @media screen and (max-width:767px) {
+    display: block;
+  }
 }
 .articleSingle {
   background-color: #fafafa;
@@ -71,7 +75,8 @@
   width: 70%;
 
   @media screen and (max-width:767px) {
-    width: 60%;
+    padding: 0;
+    width: 100%;
  }
 }
 .articleSubTitle {
@@ -95,7 +100,8 @@
   text-align: center;
 
   @media screen and (max-width:767px) {
-    width: 40%;
+    padding: 0;
+    width: 100%;
  }
 }
 .articleImage {
