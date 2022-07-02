@@ -18,26 +18,26 @@ export default function Article({ article }: Props) {
           <h2 className={styles.detailMainTitle}>Topics</h2>
         </a>
       </Link>
-      <div className="">
+      <div className={styles.detailMainArea}>
+        <div className="">
+          <div className={styles.detailSubTitle}>{article.title}</div>
+        </div>
+        {article.tag && (
+          <div className="">
+            <div className={styles.detailTag}>#{article.tag}</div>
+          </div>
+        )}
         <div className={styles.detailStyleImage}>
           <Image
             className=""
             src={article.eye_catch.url}
             objectFit="contain"
             alt={article.title + "の画像です"}
-            width={240}
-            height={240}
+            width={2000}
+            height={2000}
           />
         </div>
         <div className="">
-          <div className="">
-            <div className={styles.detailSubTitle}>{article.title}</div>
-          </div>
-          {article.tag && (
-            <div className="">
-              <div className={styles.detailTag}>#{article.tag}</div>
-            </div>
-          )}
           <div className={styles.detailBody1}>
             {/* Prevent HTML tags from being output */}
             <div
@@ -46,14 +46,14 @@ export default function Article({ article }: Props) {
               }}
             />
           </div>
-          <div className={styles.detailOthers}>
-            <Link href={"/"}>
-              <a>
-                <h2 className="">Topに戻る</h2>
-              </a>
-            </Link>
-          </div>
         </div>
+      </div>
+      <div className={styles.detailOthers}>
+        <Link href={"/"}>
+          <a>
+            <h2 className="">Topに戻る</h2>
+          </a>
+        </Link>
       </div>
     </div>
   );

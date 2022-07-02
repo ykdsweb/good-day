@@ -15,7 +15,7 @@ export default function ToTopButton() {
 
   // scrollした時の位置と動きの方向
   const scrollWindow = () => {
-    const top = 640; // ボタンを表示させる位置
+    const top = 400; // ボタンを表示させる位置
     let scroll = 0;
     scroll = window.scrollY;
 
@@ -50,12 +50,7 @@ export default function ToTopButton() {
   return (
     <>
       <button
-        className={styles.toTopButtonPC}
-        style={style}
-        onClick={returnTop}
-      ></button>
-      <button
-        className={styles.toTopButtonSP}
+        className={styles.toTopButton}
         style={style}
         onClick={returnTop}
       ></button>

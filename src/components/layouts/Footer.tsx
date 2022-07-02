@@ -2,11 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Layouts/Footer.module.scss";
 import ToTopButton from "../home/ToTopButton";
+import UnderNotice from "../../components/home/UnderNotice";
 
 export default function Footer() {
   return (
     <footer className={styles.mainFooter}>
       <ToTopButton />
+      <UnderNotice />
       <div className={styles.footerLogo}>
         <div className={styles.footerLogoImg}>
           <Link href={"/"}>
