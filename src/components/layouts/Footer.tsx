@@ -9,47 +9,79 @@ export default function Footer() {
     <footer className={styles.mainFooter}>
       <ToTopButton />
       <UnderNotice />
-      <div className={styles.footerLogo}>
-        <div className={styles.footerLogoImg}>
+      <div className={styles.footerContents}>
+        <div className={styles.footerBrock}>
           <Link href={"/"}>
             <a>
-              <Image
-                className=""
-                src={"/media/GOOD-DAY_mainLogo_05.png"}
-                objectFit="contain"
-                alt="GOOD-DAY_MainLogo"
-                width={64}
-                height={64}
-              />
+              <p className={styles.footerTitle}>Home</p>
             </a>
           </Link>
         </div>
-        <div className={styles.footerLogoImg}>
-          <Link href={"/"}>
+        <div className={styles.footerBrock}>
+          <Link href={"/stylist"}>
             <a>
-              <Image
-                className=""
-                src={"/media/OneStep_logo_00.png"}
-                objectFit="contain"
-                alt="OneStep_MainLogo"
-                width={64}
-                height={64}
-              />
+              <p className={styles.footerTitle}>Stylist</p>
             </a>
           </Link>
+          <ul>
+            <Link href={"/stylist"}>
+              <a>
+                <li>倉敷中島店</li>
+              </a>
+            </Link>
+          </ul>
+        </div>
+        <div className={styles.footerBrock}>
+          <Link href={"/service"}>
+            <a>
+              <p className={styles.footerTitle}>Service</p>
+            </a>
+          </Link>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div className={styles.footerBrock}>
+          <Link href={"/recruit"}>
+            <a>
+              <p className={styles.footerTitle}>Recruit</p>
+            </a>
+          </Link>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div className={styles.footerBrock}>
+          <Link href={"/company"}>
+            <a>
+              <p className={styles.footerTitle}>Company</p>
+            </a>
+          </Link>
+          <ul>
+            <li>新店舗情報</li>
+            <li>倉敷中島店</li>
+            <li>運営会社</li>
+          </ul>
         </div>
       </div>
-      <div className={styles.footerInfoArea}>
-        <Link href={"/"}>
-          <a>
-            <p className={styles.footerInfo}>Privacy Policy</p>
-          </a>
-        </Link>
-        <Link href={"/"}>
-          <a>
-            <p className={styles.footerInfo}>Company Profile</p>
-          </a>
-        </Link>
+      <div className={styles.rules}>
+        <p className={styles.footerTitle}>Webサイトのご利用について</p>
+        <div>
+          <ul className={styles.footerContentsEven}>
+            <Link href={"/"}>
+              <a>
+                <li>プライバシーポリシー</li>
+              </a>
+            </Link>
+            <Link href={"/"}>
+              <a>
+                <li>個人情報の取り扱いについて</li>
+              </a>
+            </Link>
+          </ul>
+        </div>
       </div>
       <p className={styles.footerCopyLight}>&copy; 2022 OneStep inc.</p>
     </footer>
