@@ -23,7 +23,7 @@ export default function Footer() {
               <p className={styles.footerTitle}>Stylist</p>
             </a>
           </Link>
-          <ul>
+          <ul className={styles.footerUl}>
             <Link href={"/stylist"}>
               <a>
                 <li>倉敷中島店</li>
@@ -37,7 +37,7 @@ export default function Footer() {
               <p className={styles.footerTitle}>Service</p>
             </a>
           </Link>
-          <ul>
+          <ul className={styles.footerUl}>
             <li></li>
             <li></li>
           </ul>
@@ -48,7 +48,7 @@ export default function Footer() {
               <p className={styles.footerTitle}>Recruit</p>
             </a>
           </Link>
-          <ul>
+          <ul className={styles.footerUl}>
             <li></li>
             <li></li>
           </ul>
@@ -59,7 +59,7 @@ export default function Footer() {
               <p className={styles.footerTitle}>Company</p>
             </a>
           </Link>
-          <ul>
+          <ul className={styles.footerUl}>
             <li>新店舗情報</li>
             <li>倉敷中島店</li>
             <li>運営会社</li>
