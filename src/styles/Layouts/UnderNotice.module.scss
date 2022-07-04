@@ -18,14 +18,20 @@
     display: none;
 
     &:hover {
+        color: aqua;
         opacity: 0.8;
     }
 
     @media screen and (max-width:767px) {
+        background-color: #333333;
+        border: none;
+        color: #fafafa;
         display: block;
-        width: 100%;
+        font-weight: bold;
         height: auto;
         margin-top: 1.2rem;
+        opacity: 0.8;
+        width: 100%;
     }
 }
 .flex {

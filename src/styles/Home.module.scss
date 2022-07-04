@@ -39,7 +39,11 @@
   }
 }
 .mainHome {
-  margin-top: 6.4rem;
+  margin-top: 4.2rem;
+
+  @media screen and (max-width:767px) {
+    margin-top: 6.1rem;
+  }
 }
 .articleArea {
   
@@ -89,7 +93,7 @@
   margin-bottom: 1rem;
   overflow: hidden;
   width: 100%;
-  height: 72px;
+  height: 5.4rem;
 }
 .articleTag {
   font-size: 16px;
