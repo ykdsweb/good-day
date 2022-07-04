@@ -1,12 +1,14 @@
 .features {
-    margin: 6.4rem auto;
+    background-image: url("/media/Service_00.png");
+    background-size: cover;
+    margin: 6.4rem auto ;
     width: 80%;
     height: auto;
     padding: 2rem;
 
     @media (max-width: 767px) {
         width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 }
 .featuresMainTitle {
