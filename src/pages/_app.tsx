@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import Footer from "../components/layouts/Footer";
 import Head from "next/head";
-import type { AppProps } from "next/app";
 import "../styles/globals.css";
+import React, { useEffect } from "react";
+import type { AppProps } from "next/app";
+import Footer from "../components/layouts/Footer";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 export default function MyApp({ Component, pageProps }: AppProps) {

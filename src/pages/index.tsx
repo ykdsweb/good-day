@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import Slider from "../components/home/Slider";
+import ReactCarousel from "../components/home/Carousel";
 import styles from "../styles/Home.module.scss";
 import type { Article } from "../../types/article";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
@@ -16,7 +16,7 @@ export default function Home({ articles }: Props) {
     <>
       <HamburgerMenu />
       <div className={styles.mainHome}>
-        <Slider />
+        <ReactCarousel />
         <div className={styles.articleArea}>
           <h2 className={styles.articleMainTitle}>Topics</h2>
           {articles.map((article) => (

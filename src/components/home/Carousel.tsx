@@ -1,32 +1,11 @@
-import React from "react";
 import Image from "next/image";
-import Carousel from "react-material-ui-carousel";
-import styles from "../../styles/Layouts/Slider.module.scss";
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export default function Slider() {
+const ReactCarousel = () => {
   return (
-    <div className="">
-      <Carousel
-        indicatorIconButtonProps={{
-          style: {
-            padding: "1rem",
-          },
-        }}
-        indicatorContainerProps={{
-          style: {},
-        }}
-        navButtonsWrapperProps={{
-          style: {
-            marginTop: "0",
-          },
-        }}
-        navButtonsProps={{
-          style: {
-            color: "#fafafa",
-            background: "#333333",
-          },
-        }}
-      >
+    <>
+      <Carousel >
         <div>
           <Image
             className=""
@@ -35,6 +14,7 @@ export default function Slider() {
             width={2000}
             height={1250}
           />
+          <p className="legend">Legend 1</p>
         </div>
         <div>
           <Image
@@ -44,6 +24,7 @@ export default function Slider() {
             width={2000}
             height={1250}
           />
+          <p className="legend">Legend 2</p>
         </div>
         <div>
           <Image
@@ -53,8 +34,11 @@ export default function Slider() {
             width={2000}
             height={1250}
           />
+          <p className="legend">Legend 3</p>
         </div>
       </Carousel>
-    </div>
+    </>
   );
-}
+};
+
+export default ReactCarousel;
