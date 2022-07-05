@@ -12,7 +12,7 @@ export default function HamburgerMenu() {
     <>
       <header id="header" className={styles.header}>
         <div className={styles.logo}>
-          <Link href={"/"}>
+          <Link href={"/"} passHref>
             <a>
               <Image
                 className={styles.navImage}
@@ -28,32 +28,37 @@ export default function HamburgerMenu() {
         <nav className={styles.navPC}>
           <ul>
             <li>
-              <Link href="/">
+              <Link href="/" passHref>
                 <a>Home</a>
               </Link>
             </li>
             <li>
-              <Link href="/stylist">
+              <Link href="/stylist" passHref>
                 <a>Stylist</a>
               </Link>
             </li>
             <li>
-              <Link href="/service">
+              <Link href="/service" passHref>
                 <a>Service</a>
               </Link>
             </li>
             <li>
-              <Link href="/recruit">
+              <Link href="/philosophy" passHref>
+                <a>Philosophy</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/recruit" passHref>
                 <a>Recruit</a>
               </Link>
             </li>
             <li>
-              <Link href="/company">
+              <Link href="/company" passHref>
                 <a>Company</a>
               </Link>
             </li>
             <li>
-              <Link href="https://sam004.salonanswer.com/sas/reserve/goodday/staff">
+              <Link href="https://sam004.salonanswer.com/sas/reserve/goodday/staff" passHref>
                 <a>Reservation</a>
               </Link>
             </li>
@@ -78,7 +83,7 @@ export default function HamburgerMenu() {
             <p>Close</p>
           </div>
           <li>
-            <Link href="/">
+            <Link href="/" passHref>
               <a>
                 <p className={styles.mainTitle}>Home</p>
                 <p className={styles.subTitle}>ホーム</p>
@@ -86,7 +91,7 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/stylist">
+            <Link href="/stylist" passHref>
               <a>
                 <p className={styles.mainTitle}>Stylist</p>
                 <p className={styles.subTitle}>スタイリスト</p>
@@ -94,7 +99,7 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/service">
+            <Link href="/service" passHref>
               <a>
                 <p className={styles.mainTitle}>Service</p>
                 <p className={styles.subTitle}>サービス</p>
@@ -102,7 +107,15 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/recruit">
+            <Link href="/philosophy" passHref>
+              <a>
+                <p className={styles.mainTitle}>philosophy</p>
+                <p className={styles.subTitle}>理念</p>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/recruit" passHref>
               <a>
                 <p className={styles.mainTitle}>Recruit</p>
                 <p className={styles.subTitle}>リクルート</p>
@@ -110,7 +123,7 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/company">
+            <Link href="/company" passHref>
               <a>
                 <p className={styles.mainTitle}>Company</p>
                 <p className={styles.subTitle}>運営会社</p>
@@ -118,7 +131,7 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="https://sam004.salonanswer.com/sas/reserve/goodday/staff">
+            <Link href="https://sam004.salonanswer.com/sas/reserve/goodday/staff" passHref>
               <a>
                 <p className={styles.mainTitle}>Reservation</p>
                 <p className={styles.subTitle}>予約する</p>

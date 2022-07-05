@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../styles/Service/Service.module.scss";
+import styles from "../../styles/philosophy/Philosophy.module.scss";
 
 const Features: React.FC = () => {
   return (

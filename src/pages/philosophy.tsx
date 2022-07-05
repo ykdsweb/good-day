@@ -1,9 +1,9 @@
-import Overview from "../components/service/Overview";
+import Features from "../components/philosophy/Features";
 
 const Service: React.FC = () => {
   return (
     <>
-      <Overview />
+      <Features />
     </>
   );
 };
