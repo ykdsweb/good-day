@@ -38,6 +38,17 @@ export default function Footer() {
             </a>
           </Link>
           <ul className={styles.footerUl}>
+            <li>お客様へ</li>
+            <li>スタイリスト向け</li>
+          </ul>
+        </div>
+        <div className={styles.footerBrock}>
+          <Link href={"/philosophy"}>
+            <a>
+              <p className={styles.footerTitle}>Philosophy</p>
+            </a>
+          </Link>
+          <ul className={styles.footerUl}>
             <li></li>
             <li></li>
           </ul>

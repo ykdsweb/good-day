@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
+import styles from "../../styles/Layouts/Carousel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ReactCarousel = () => {
@@ -14,7 +15,7 @@ const ReactCarousel = () => {
             width={2000}
             height={1250}
           />
-          <p className="legend">Legend 1</p>
+          <p className={styles.carouselInfo}>楽しもう。自分だけの時間を。</p>
         </div>
         <div>
           <Image
@@ -24,7 +25,9 @@ const ReactCarousel = () => {
             width={2000}
             height={1250}
           />
-          <p className="legend">Legend 2</p>
+          <p className={styles.carouselInfo}>
+            お客様とスタイリストに優しいヘアサロン。
+          </p>
         </div>
         <div>
           <Image
@@ -34,7 +37,9 @@ const ReactCarousel = () => {
             width={2000}
             height={1250}
           />
-          <p className="legend">Legend 3</p>
+          <p className={styles.carouselInfo}>
+            見つけませんか？あなただけの働き方を。
+          </p>
         </div>
       </Carousel>
     </>
