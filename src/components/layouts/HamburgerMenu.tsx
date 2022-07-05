@@ -58,7 +58,10 @@ export default function HamburgerMenu() {
               </Link>
             </li>
             <li>
-              <Link href="https://sam004.salonanswer.com/sas/reserve/goodday/staff" passHref>
+              <Link
+                href="https://sam004.salonanswer.com/sas/reserve/goodday/staff"
+                passHref
+              >
                 <a>Reservation</a>
               </Link>
             </li>
@@ -131,7 +134,10 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="https://sam004.salonanswer.com/sas/reserve/goodday/staff" passHref>
+            <Link
+              href="https://sam004.salonanswer.com/sas/reserve/goodday/staff"
+              passHref
+            >
               <a>
                 <p className={styles.mainTitle}>Reservation</p>
                 <p className={styles.subTitle}>予約する</p>

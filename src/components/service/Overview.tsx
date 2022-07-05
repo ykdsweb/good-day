@@ -9,12 +9,10 @@ const Overview: React.FC = () => {
     <>
       <div className={styles.main}>
         <h2 className={styles.featuresMainTitle}>ページタイトル</h2>
-        <p className={styles.featuresMainSubTitle}>
-          ページサブタイトル
-        </p>
+        <p className={styles.featuresMainSubTitle}>ページサブタイトル</p>
         <>
-        <Customer />
-        <ToStylist />
+          <Customer />
+          <ToStylist />
         </>
         <div className={styles.returnToTop}>
           <Link href={"/"} passHref>

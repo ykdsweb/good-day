@@ -25,7 +25,9 @@ const ReactCarousel = () => {
             width={2000}
             height={1250}
           />
-          <p className={styles.carouselInfo}>お客様とスタイリストに優しいヘアサロン。</p>
+          <p className={styles.carouselInfo}>
+            お客様とスタイリストに優しいヘアサロン。
+          </p>
         </div>
         <div>
           <Image
@@ -35,7 +37,9 @@ const ReactCarousel = () => {
             width={2000}
             height={1250}
           />
-          <p className={styles.carouselInfo}>見つけませんか？あなただけの働き方を。</p>
+          <p className={styles.carouselInfo}>
+            見つけませんか？あなただけの働き方を。
+          </p>
         </div>
       </Carousel>
     </>

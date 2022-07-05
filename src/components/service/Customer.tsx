@@ -6,11 +6,12 @@ const Customer: React.FC = () => {
     <>
       <div className={styles.features}>
         <h2 className={styles.featuresMainTitle}>タイトル(お客さんへ)</h2>
-        <p className={styles.featuresMainSubTitle}>
-          サブタイトル(お客様へ)
-        </p>
+        <p className={styles.featuresMainSubTitle}>サブタイトル(お客様へ)</p>
         <div className={styles.returnToTop}>
-          <Link href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"} passHref>
+          <Link
+            href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
+            passHref
+          >
             <a>
               <h2 className="">Web予約はこちら</h2>
             </a>
