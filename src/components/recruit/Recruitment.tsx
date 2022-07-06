@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Applications from "../../components/menu/Applications";
+import NakashimaGuidelines from "./NakashimaGuidelines";
 import styles from "../../styles/Recruit/Recruit.module.scss";
 
 export default function Recruitment() {
@@ -26,7 +26,7 @@ export default function Recruitment() {
         <>
           <h2 className={styles.subTitle}>募集要項</h2>
           {/* stylistMenuと同じコンポーネントを挿入 */}
-          <Applications />
+          <NakashimaGuidelines />
           {/* newShop という新店舗についてのコンポーネントを挿入する */}
         </>
       </div>
