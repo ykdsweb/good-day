@@ -37,7 +37,7 @@ export default function Home({ articles }: Props) {
                     />
                   </div>
                   <div className={styles.articleTag}>
-                    {article.tag && <span className="">#{article.tag}</span>}
+                    {article.tag && <p className="">#{article.tag}</p>}
                   </div>
                 </div>
                 <div className={styles.articleRight}>

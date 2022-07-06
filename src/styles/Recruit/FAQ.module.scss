@@ -1,23 +1,25 @@
 .accordionArea {
-  margin: 1rem auto;
+  margin: 6.4rem auto 1rem;
   width: 100%;
 }
 .accordionTitle {
-
+  font-size: 24px;
+  font-weight: bold;
+  margin: 4rem 0 1rem;
 }
 .accordionCheck {
   display: none;
 }
 .accordionLabel {
-  background: #0068b7;
-  color: #fff;
+  background: #eeeeee;
+  color: #333333;
   display: block;
   margin-bottom: 1px;
   padding: 16px;
   position: relative;
 
   &:after{
-    background: #00479d;
+    background: #9f9f9f;
     box-sizing: border-box;
     content: '\f067';
     display: block;
@@ -46,3 +48,22 @@
     padding: 10px;
     visibility: visible;
 }
+.more {
+    background-color: #fafafa;
+    border: solid 0.1px #eeeeee;
+    border-radius: 40px;
+    box-shadow: 1px 2px 2px 1px rgb(0 0 0 / 10%);
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    width: 50%;
+  
+    &:hover {
+        color: aqua;
+        background-color: #333333;
+    }
+    @media (max-width: 767px) {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+  }
