@@ -45,7 +45,7 @@ export default function Stylist({ stylists }: Props) {
                 <div className={styles.stylistTag}>
                   {stylist.tag && <span className="">#{stylist.tag}</span>}
                 </div>
-                <Link href={stylist.url}>
+                <Link href={stylist.url} passHref>
                   <a>
                     <p className={styles.stylistDetailUrl}>
                       指名してWeb予約する

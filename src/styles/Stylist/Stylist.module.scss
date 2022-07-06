@@ -34,11 +34,6 @@
   margin: 1rem;
   padding: 1rem;
 
-  &:hover {
-      outline: 8px solid aqua;
-      outline-offset: -8px;
-  }
-
   @media (max-width: 767px) {
       // width: calc(50% - 32px);
       text-align: center;

@@ -97,6 +97,10 @@
 }
 .articleTag {
   font-size: 16px;
+
+  &:hover {
+    color: #333333;
+  }
 }
 .articleRight {
   padding: 1rem;
