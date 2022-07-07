@@ -148,11 +148,12 @@ export default function FAQ() {
             グレイカラーはナプラです。
           </p>
         </div>
+        {/* 必要になったタイミングで増やしましょう。
         <Link href={"/"} passHref>
           <a>
             <p className={styles.more}>もっと見る</p>
           </a>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

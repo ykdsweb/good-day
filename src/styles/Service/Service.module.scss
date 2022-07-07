@@ -1,12 +1,12 @@
 .main {
     border: solid 1px red;
     height: auto;
-    margin: 6.4rem auto 1rem;
-    padding: 2rem;
+    margin: 6.4rem auto;
     width: 80%;
 
     @media (max-width: 767px) {
         margin-bottom: 0;
+        padding: 1rem;
         width: 100%;
     }
 }
