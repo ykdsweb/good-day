@@ -14,21 +14,26 @@
   background: #eeeeee;
   color: #333333;
   display: block;
+  height: 4rem;
   margin-bottom: 1px;
   padding: 16px;
   position: relative;
 
   &:after{
-    background: #9f9f9f;
+    background-image: url("/media/icon_00.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-color: #9f9f9f;
     box-sizing: border-box;
-    content: '\f067';
+    content: '';
     display: block;
     font-family: "Font Awesome 5 Free";
-    height: 56px;
+    height: 4rem;
     padding: 16px 20px;
     position: absolute;
     right: 0;
     top: 0px;
+    width: 4rem;
   }
 }
 .accordionContent{
@@ -40,7 +45,10 @@
     visibility: hidden;
 }
 .accordionCheck:checked + .accordionLabel:after{
-    content: '\f068';
+    content: '';
+    background-image: url("/media/icon_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .accordionCheck:checked + .accordionLabel + .accordionContent{
     height: auto;
