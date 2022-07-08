@@ -8,8 +8,8 @@ const Overview: React.FC = () => {
   return (
     <>
       <div className={styles.main}>
-        <h2 className={styles.featuresMainTitle}>ページタイトル</h2>
-        <p className={styles.featuresMainSubTitle}>ページサブタイトル</p>
+        <h2 className={styles.featuresMainTitle}>Serviced</h2>
+        <p className={styles.featuresMainSubTitle}>GOOD-DAYのサービス概要</p>
         <>
           <Customer />
           <ToStylist />
