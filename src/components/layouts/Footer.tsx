@@ -11,20 +11,20 @@ export default function Footer() {
       <UnderNotice />
       <div className={styles.footerContents}>
         <div className={styles.footerBrock}>
-          <Link href={"/"}>
+          <Link href={"/"} passHref>
             <a>
               <p className={styles.footerTitle}>Home</p>
             </a>
           </Link>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/stylist"}>
+          <Link href={"/stylist"} passHref>
             <a>
               <p className={styles.footerTitle}>Stylist</p>
             </a>
           </Link>
           <ul className={styles.footerUl}>
-            <Link href={"/stylist"}>
+            <Link href={"/stylist"} passHref>
               <a>
                 <li>倉敷中島店</li>
               </a>
@@ -32,18 +32,26 @@ export default function Footer() {
           </ul>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/service"}>
+          <Link href={"/service"} passHref>
             <a>
               <p className={styles.footerTitle}>Service</p>
             </a>
           </Link>
           <ul className={styles.footerUl}>
-            <li>お客様へ</li>
-            <li>スタイリスト向け</li>
+            <Link href={"/service/#Customer"} passHref>
+              <a>
+                <li>お客様へ</li>
+              </a>
+            </Link>
+            <Link href={"/service/#ToStylist"} passHref>
+              <a>
+                <li>スタイリスト向け</li>
+              </a>
+            </Link>
           </ul>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/philosophy"}>
+          <Link href={"/philosophy"} passHref>
             <a>
               <p className={styles.footerTitle}>Philosophy</p>
             </a>
@@ -54,7 +62,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/recruit"}>
+          <Link href={"/recruit"} passHref>
             <a>
               <p className={styles.footerTitle}>Recruit</p>
             </a>
@@ -65,7 +73,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/company"}>
+          <Link href={"/company"} passHref>
             <a>
               <p className={styles.footerTitle}>Company</p>
             </a>
@@ -81,12 +89,12 @@ export default function Footer() {
         <p className={styles.footerTitle}>Webサイトのご利用について</p>
         <div>
           <ul className={styles.footerContentsEven}>
-            <Link href={"/"}>
+            <Link href={"/"} passHref>
               <a>
                 <li>プライバシーポリシー</li>
               </a>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/"} passHref>
               <a>
                 <li>個人情報の取り扱いについて</li>
               </a>

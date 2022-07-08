@@ -5,7 +5,7 @@ import styles from "../../styles/Service/Service.module.scss";
 const ToStylist: React.FC = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div id="ToStylist" className={styles.main}>
         <h2 className={styles.featuresMainTitle}>GOOD-DAYで働く</h2>
         <p className={styles.featuresMainSubTitle}>スタイリストさんへ</p>
         <>
@@ -56,7 +56,7 @@ const ToStylist: React.FC = () => {
                 height={240}
               />
               <p className={styles.fontBord}>コレを提供したかった…</p>
-              <p>仕入も、持ち込み自由です。</p>
+              <p>仕入も、持ち込みも自由です。</p>
             </li>
           </ul>
         </>

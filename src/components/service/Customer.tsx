@@ -5,7 +5,7 @@ import styles from "../../styles/Service/Service.module.scss";
 const Customer: React.FC = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div id="Customer" className={styles.main}>
         <h2 className={styles.featuresMainTitle}>GOOD-DAYのこだわり</h2>
         <p className={styles.featuresMainSubTitle}>お客様へ</p>
         <>
