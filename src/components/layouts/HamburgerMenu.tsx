@@ -19,8 +19,8 @@ export default function HamburgerMenu() {
                 src={"/media/GOOD-DAY_mainLogo_05.png"}
                 objectFit="contain"
                 alt="GOOD-DAY_MainLogo"
-                width={64}
-                height={64}
+                width={56}
+                height={56}
               />
             </a>
           </Link>

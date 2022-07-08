@@ -1,6 +1,10 @@
 .accordionArea {
-  margin: 6.4rem auto 1rem;
+  margin: 5.8rem auto 1rem;
   width: 100%;
+
+  @media screen and (max-width:767px) {
+    margin-top: 7.8rem;
+  }
 }
 .accordionTitle {
   font-size: 24px;

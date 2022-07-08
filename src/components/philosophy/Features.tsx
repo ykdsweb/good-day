@@ -107,13 +107,6 @@ const Features: React.FC = () => {
             グッディでは、美容師という職業を一生愛し続け、「美容師って最高だ」と実感してもらえる環境づくりを目指しています。
           </div>
         </>
-        <div className={styles.returnToTop}>
-          <Link href={"/"}>
-            <a>
-              <h2 className="">Topに戻る</h2>
-            </a>
-          </Link>
-        </div>
       </div>
     </>
   );
