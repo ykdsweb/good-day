@@ -5,6 +5,7 @@ import { client } from "../libs/client";
 import ReactCarousel from "../components/home/Carousel";
 import styles from "../styles/Home.module.scss";
 import type { Article } from "../../types/article";
+import ToStylist from "../components/service/ToStylist";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 type Props = {
@@ -54,6 +55,7 @@ export default function Home({ articles }: Props) {
             </div>
           ))}
         </div>
+        <ToStylist />
       </div>
     </>
   );
