@@ -82,4 +82,8 @@
 }
 .stylistImage {
   filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  
+  @media (max-width: 767px) {
+    margin-bottom: 2rem;
+  }
 }
