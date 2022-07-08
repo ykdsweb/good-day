@@ -1,9 +1,10 @@
 .main {
   height: auto;
-  margin: 6.4rem auto 2rem;
+  margin: 5.8rem auto 2rem;
   width: 80%;
 
   @media (max-width: 767px) {
+    margin-top: 7.8rem;
     margin-bottom: 0;
     padding: 1rem;
     width: 100%;
@@ -51,7 +52,7 @@
   background-color: #eeeeee;
   border-radius: 32px;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  margin: 4rem auto 6.4rem;
+  margin: 4rem auto 5.8rem;
   text-align: center;
   padding: 1rem;
   width: 50%;

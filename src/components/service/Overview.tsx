@@ -14,13 +14,6 @@ const Overview: React.FC = () => {
           <Customer />
           <ToStylist />
         </>
-        <div className={styles.returnToTop}>
-          <Link href={"/"} passHref>
-            <a>
-              <h2 className="">Topに戻る</h2>
-            </a>
-          </Link>
-        </div>
       </div>
     </>
   );
