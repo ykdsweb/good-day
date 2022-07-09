@@ -101,7 +101,7 @@ export default function Footer() {
         <p className={styles.footerTitle}>Webサイトのご利用について</p>
         <div>
           <ul className={styles.footerContentsEven}>
-            <Link href={"/"} passHref>
+            <Link href={"/privacypolicy"} passHref>
               <a>
                 <li>プライバシーポリシー</li>
               </a>
