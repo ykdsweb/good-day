@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Company/Company.module.scss";
 
-const phoneNumber: string = "086-454-7373";
-
 export default function Nakashima() {
   return (
     <>
@@ -30,7 +28,7 @@ export default function Nakashima() {
               <th className={styles.menuTableTh}>Tel</th>
               <td className={styles.menuTableTd}>
                 <div className={styles.next}>
-                  <Link href={"tel:phoneNumber"} passHref>
+                  <Link href={"tel:086-454-7373"} passHref>
                     <a className={styles.nextInner}>
                       <span className={styles.nextInnerIn}>
                         call someone !!

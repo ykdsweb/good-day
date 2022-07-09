@@ -6,5 +6,7 @@ export const routes = [
     { name: "Philosophy", link: "/philosophy" },
     { name: "Recruit", link: "/recruit" },
     { name: "Company", link: "/company" },
-    { name: "Contact", link: "/contact" }
+    { name: "Contact", link: "/contact" },
+    { name: "PrivacyPolicy", link: "/privacypolicy" }
+    
   ]
