@@ -48,10 +48,10 @@ export default function Article({ article }: Props) {
           </div>
         </div>
       </div>
-      <div className={styles.detailOthers}>
-        <Link href={"/"}>
-          <a>
-            <h2 className="">Topに戻る</h2>
+      <div className={styles.next}>
+        <Link href={"/"} passHref>
+          <a className={styles.nextInner}>
+            <span className={styles.nextInnerIn}>Topに戻る</span>
           </a>
         </Link>
       </div>

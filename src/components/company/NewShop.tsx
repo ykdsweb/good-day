@@ -6,7 +6,7 @@ import styles from "../../styles/Company/Company.module.scss";
 export default function NewShop() {
   return (
     <>
-      <div className={styles.menu}>
+      <div id="NewShop" className={styles.menu}>
         <h2 className={styles.menuTitle}>新店舗情報</h2>
         <table className={styles.menuArea}>
           <tbody>

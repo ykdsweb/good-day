@@ -87,13 +87,13 @@ const Customer: React.FC = () => {
             </li>
           </ul>
         </>
-        <div className={styles.returnToNext}>
+        <div className={styles.next}>
           <Link
             href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
             passHref
           >
-            <a>
-              <h2 className="">Web予約はこちら</h2>
+            <a className={styles.nextInner}>
+              <span className={styles.nextInnerIn}>Web予約はこちら</span>
             </a>
           </Link>
         </div>

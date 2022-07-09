@@ -19,7 +19,7 @@ const ToStylist: React.FC = () => {
                 height={240}
               />
               <p className={styles.fontBord}>収入Upも夢じゃない</p>
-              <p>開業のために貯金してください。</p>
+              <p>夢のために貯金できます。</p>
             </li>
             <li className={styles.stylistImage}>
               <Image
@@ -30,7 +30,7 @@ const ToStylist: React.FC = () => {
                 height={240}
               />
               <p className={styles.fontBord}>脅威の歩合</p>
-              <p>通常ではあり得ない!!</p>
+              <p>やりがいと価値を感じて欲しい。</p>
             </li>
           </ul>
         </>
@@ -45,7 +45,7 @@ const ToStylist: React.FC = () => {
                 height={240}
               />
               <p className={styles.fontBord}>周りの目が気にならない</p>
-              <p>スタイリストもお客様もリラックス。</p>
+              <p>いつもよりお客様もリラックス</p>
             </li>
             <li className={styles.stylistImage}>
               <Image
@@ -86,10 +86,10 @@ const ToStylist: React.FC = () => {
             </li>
           </ul>
         </>
-        <div className={styles.returnToNext}>
+        <div className={styles.next}>
           <Link href={"/recruit"} passHref>
-            <a>
-              <h2 className="">募集条件を見る</h2>
+            <a className={styles.nextInner}>
+              <span className={styles.nextInnerIn}>募集条件を見る</span>
             </a>
           </Link>
         </div>
