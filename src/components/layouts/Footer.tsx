@@ -79,9 +79,21 @@ export default function Footer() {
             </a>
           </Link>
           <ul className={styles.footerUl}>
-            <li>新店舗情報</li>
-            <li>倉敷中島店</li>
-            <li>運営会社</li>
+            <Link href={"/company/#NewShop"} passHref>
+              <a>
+                <li>新店舗情報</li>
+              </a>
+            </Link>
+            <Link href={"/company/#Nakashima"} passHref>
+              <a>
+                <li>倉敷中島店</li>
+              </a>
+            </Link>
+            <Link href={"/company/#Corporation"} passHref>
+              <a>
+                <li>運営会社</li>
+              </a>
+            </Link>
           </ul>
         </div>
       </div>

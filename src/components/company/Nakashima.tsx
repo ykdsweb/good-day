@@ -6,7 +6,7 @@ import styles from "../../styles/Company/Company.module.scss";
 export default function Nakashima() {
   return (
     <>
-      <div className={styles.menu}>
+      <div id="Nakashima" className={styles.menu}>
         <h2 className={styles.menuTitle}>倉敷中島店</h2>
         <table className={styles.menuArea}>
           <tbody>
@@ -26,7 +26,17 @@ export default function Nakashima() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>Tel</th>
-              <td className={styles.menuTableTd}>086-454-7373</td>
+              <td className={styles.menuTableTd}>
+                <div className={styles.next}>
+                  <Link href={"tel:086-454-7373"} passHref>
+                    <a className={styles.nextInner}>
+                      <span className={styles.nextInnerIn}>
+                        call someone !!
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </td>
             </tr>
           </tbody>
           <tbody>

@@ -45,13 +45,13 @@ export default function Stylist({ stylists }: Props) {
                 <div className={styles.stylistTag}>
                   {stylist.tag && <span className="">#{stylist.tag}</span>}
                 </div>
-                <Link href={stylist.url} passHref>
-                  <a>
-                    <p className={styles.stylistDetailUrl}>
-                      指名してWeb予約する
-                    </p>
-                  </a>
-                </Link>
+                <div className={styles.next}>
+                  <Link href={stylist.url} passHref>
+                    <a className={styles.nextInner}>
+                      <span className={styles.nextInnerIn}>Web予約する</span>
+                    </a>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>

@@ -70,11 +70,13 @@ export default function Stylist({ stylist }: Props) {
                   }}
                 />
               </div>
-              <Link href={stylist.url}>
-                <a>
-                  <p className={styles.stylistDetailUrl}>指名してWeb予約する</p>
-                </a>
-              </Link>
+              <div className={styles.next}>
+                <Link href={stylist.url} passHref>
+                  <a className={styles.nextInner}>
+                    <span className={styles.nextInnerIn}>Web予約する</span>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -144,15 +146,17 @@ export default function Stylist({ stylist }: Props) {
         <p className={styles.menuDetail}>
           ※上記メニュー意外にもキャンペーン価格やセットメニューがございます。詳しい内容はスタイリストまでご連絡ください。
         </p>
-        <Link href={stylist.url}>
-          <a>
-            <p className={styles.detailUrl}>指名してWeb予約する</p>
-          </a>
-        </Link>
-        <div className={styles.detailOthers}>
-          <Link href={"/stylist"}>
-            <a>
-              <h2 className="">他のStylistも見る</h2>
+        <div className={styles.next}>
+          <Link href={stylist.url} passHref>
+            <a className={styles.nextInner}>
+              <span className={styles.nextInnerIn}>Web予約する</span>
+            </a>
+          </Link>
+        </div>
+        <div className={styles.next}>
+          <Link href={"/stylist"} passHref>
+            <a className={styles.nextInner}>
+              <span className={styles.nextInnerIn}>他のStylistを見る</span>
             </a>
           </Link>
         </div>
