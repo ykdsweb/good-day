@@ -52,8 +52,8 @@
   font-size: 32px;
   font-weight: bold;
   margin: 0 auto;
-  width: 90%;
   padding-bottom: 2rem;
+  width: 80%;
 }
 .articleFlex {
   display: flex;
@@ -68,11 +68,16 @@
   border: solid 0.1px #eeeeee;
   border-radius: 8px;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  width: 90%;
   height: 30%;
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 1rem;
+  width: 80%;
+
+  @media screen and (max-width:767px) {
+    padding: 1rem;
+    width: 96%;
+ }
 }
 .articleLeft {
   padding: 1rem;
