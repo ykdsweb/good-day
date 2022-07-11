@@ -42,8 +42,8 @@ export default function Stylist({ stylist }: Props) {
               src={stylist.eye_catch.url}
               objectFit="contain"
               alt={stylist.title + "の画像です"}
-              width={500}
-              height={360}
+              width={1000}
+              height={720}
             />
           </div>
 

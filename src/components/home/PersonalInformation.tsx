@@ -194,10 +194,10 @@ const PersonalInformation: React.FC = () => {
             </p>
             <br />
             <ul>
-              <li>住所: </li>
-              <li>社名: </li>
-              <li>担当部署: </li>
-              <li>E-mail: </li>
+              <li>住所:&nbsp;〒710-0834 岡山県倉敷市笹沖449-4</li>
+              <li>社名:&nbsp;株式会社OneStep</li>
+              <li>担当部署:&nbsp;DesignStudio</li>
+              <li>E-mail:&nbsp;gooddaybss777@gmail.com</li>
             </ul>
           </div>
         </>
