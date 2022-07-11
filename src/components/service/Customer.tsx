@@ -12,9 +12,9 @@ const Customer: React.FC = () => {
           <ul className={styles.flex}>
             <li>
               <Image
-                src={"/media/commitment_img_00.png"}
+                src={"/media/Customer_00.png"}
                 objectFit="contain"
-                alt={"の画像です"}
+                alt={"こだわり1"}
                 width={240}
                 height={240}
               />
@@ -23,9 +23,9 @@ const Customer: React.FC = () => {
             </li>
             <li>
               <Image
-                src={"/media/commitment_img_06.png"}
+                src={"/media/Customer_01.png"}
                 objectFit="contain"
-                alt={"の画像です"}
+                alt={"こだわり2"}
                 width={240}
                 height={240}
               />
@@ -38,9 +38,9 @@ const Customer: React.FC = () => {
           <ul className={styles.flex}>
             <li>
               <Image
-                src={"/media/commitment_img_02.png"}
+                src={"/media/Customer_02.png"}
                 objectFit="contain"
-                alt={"の画像です"}
+                alt={"こだわり3"}
                 width={240}
                 height={240}
               />
@@ -50,9 +50,9 @@ const Customer: React.FC = () => {
             </li>
             <li>
               <Image
-                src={"/media/commitment_img_01.png"}
+                src={"/media/Customer_03.png"}
                 objectFit="contain"
-                alt={"の画像です"}
+                alt={"こだわり4"}
                 width={240}
                 height={240}
               />
@@ -65,9 +65,9 @@ const Customer: React.FC = () => {
           <ul className={styles.flex}>
             <li>
               <Image
-                src={"/media/commitment_img_07.png"}
+                src={"/media/Customer_04.png"}
                 objectFit="contain"
-                alt={"の画像です"}
+                alt={"こだわり5"}
                 width={240}
                 height={240}
               />
@@ -76,9 +76,9 @@ const Customer: React.FC = () => {
             </li>
             <li>
               <Image
-                src={"/media/commitment_img_05.png"}
+                src={"/media/Customer_05.png"}
                 objectFit="contain"
-                alt={"の画像です"}
+                alt={"こだわり6"}
                 width={240}
                 height={240}
               />
