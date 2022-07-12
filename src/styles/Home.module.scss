@@ -80,11 +80,13 @@
  }
 }
 .articleLeft {
+  margin-top: 1rem;
   padding: 1rem;
   text-align: center;
   width: 30%;
 
   @media screen and (max-width:767px) {
+    margin: 0;
     padding: 0;
     width: 100%;
  }
