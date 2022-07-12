@@ -38,3 +38,72 @@
     display: flex;
     justify-content: space-evenly;
 }
+.poyoyon {
+    animation: poyoyon 4.0s infinite;
+    opacity: 1;
+  }
+  @keyframes poyoyon {
+    0%, 40% {
+      transform: skew(0deg, 0deg);
+    }
+    5% {
+      transform: skew(5deg, 5deg);
+    }
+    10% {
+      transform: skew(-4deg, -4deg);
+    }
+    15% {
+      transform: skew(3deg, 3deg);
+    }
+    20% {
+      transform: skew(-2deg, -2deg);
+    }
+    25% {
+      transform: skew(1deg, 1deg);
+    }
+    30% {
+      transform: skew(-0.6deg, -0.6deg);
+    }
+    35% {
+      transform: skew(0.3deg, 0.3deg);
+    }
+  }
+  .maskBg {
+    color: transparent;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    transition: color 0ms 450ms;
+  }
+  .maskBg::after {
+    background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, 100%);
+  }
+   
+  .maskBg {
+    color: #362ae0;
+  }
+  .mask-bg.is-animated::after {
+    animation: mask-bg 1.2s cubic-bezier(0.8, 0, 0.170, 1);
+  }
+   
+  @keyframes maskBg {
+    0% {
+      transform: translate(0, 101%)
+    }
+    40%, 60% {
+      transform: translate(0, 0%)
+    }
+    100% {
+      transform: translate(0, -100%)
+    }
+  }

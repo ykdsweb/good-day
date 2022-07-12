@@ -3,6 +3,7 @@ import Router from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
+import HeadIn from "../components/layouts/Head";
 import type { Stylist } from "../../types/stylist";
 import styles from "../styles/Stylist/Stylist.module.scss";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
@@ -14,6 +15,13 @@ type Props = {
 export default function Stylist({ stylists }: Props) {
   return (
     <>
+      <HeadIn
+        title={"GOOD-DAY会社概要|岡山県倉敷市の個室シェアサロン"}
+        description={""}
+        keyword={""}
+        image={""}
+        url={""}
+      />
       <HamburgerMenu />
       <div className={styles.mainHome}>
         <div className={styles.stylistArea}>

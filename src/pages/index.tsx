@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
 import Works from "../components/home/Works";
+import HeadIn from "../components/layouts/Head";
 import styles from "../styles/Home.module.scss";
 import type { Article } from "../../types/article";
 import ReactCarousel from "../components/home/Carousel";
@@ -15,6 +16,13 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <>
+      <HeadIn
+        title={"GOOD-DAY(グッディ)|岡山県倉敷市の個室シェアサロン"}
+        description={""}
+        keyword={""}
+        image={""}
+        url={""}
+      />
       <HamburgerMenu />
       <div className={styles.mainHome}>
         <ReactCarousel />
