@@ -85,14 +85,14 @@ export default function HamburgerMenu() {
             <span></span>
             <p>Close</p>
           </div>
-          <li>
+          {/* <li>
             <Link href="/" passHref>
               <a>
                 <p className={styles.mainTitle}>Home</p>
                 <p className={styles.subTitle}>ホーム</p>
               </a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/stylist" passHref>
               <a>

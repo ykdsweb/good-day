@@ -24,32 +24,40 @@ export default function Home({ articles }: Props) {
             <div className={styles.articleSingle} key={article.id}>
               <div className={styles.articleFlex}>
                 <div className={styles.articleLeft}>
+                  <Link href={`/article/${article.id}`} passHref>
+                    <a>
+                      <Image
+                        className={styles.articleImage}
+                        src={article.eye_catch.url}
+                        objectFit="contain"
+                        alt={article.title + "の画像です"}
+                        width={240}
+                        height={240}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className={styles.articleRight}>
                   <div className={styles.articleSubTitle}>
                     <Link href={`/article/${article.id}`} passHref>
                       <a>{article.title}</a>
                     </Link>
                   </div>
                   {/* Prevent HTML tags from being output */}
-                  <div className={styles.articleBody}>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `${article.body}`,
-                      }}
-                    />
-                  </div>
+                  <Link href={`/article/${article.id}`} passHref>
+                    <a>
+                      <div className={styles.articleBody}>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: `${article.body}`,
+                          }}
+                        />
+                      </div>
+                    </a>
+                  </Link>
                   <div className={styles.articleTag}>
                     {article.tag && <p className="">#{article.tag}</p>}
                   </div>
-                </div>
-                <div className={styles.articleRight}>
-                  <Image
-                    className={styles.articleImage}
-                    src={article.eye_catch.url}
-                    objectFit="contain"
-                    alt={article.title + "の画像です"}
-                    width={240}
-                    height={240}
-                  />
                 </div>
               </div>
             </div>
@@ -65,7 +73,7 @@ export default function Home({ articles }: Props) {
 export const getStaticProps = async () => {
   const data = await client.get({
     endpoint: "articles",
-    queries: { limit: 20, offset: 0 },
+    queries: { limit: 3, offset: 0 },
   });
 
   return {

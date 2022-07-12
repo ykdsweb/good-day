@@ -24,7 +24,9 @@ export default function Recruitment() {
           </h2>
         </div>
         <>
-          <h2 className={styles.subTitle}>募集要項</h2>
+          <h2 id="RecruitmentSummary" className={styles.subTitle}>
+            募集要項
+          </h2>
           {/* stylistMenuと同じコンポーネントを挿入 */}
           <NakashimaGuidelines />
           {/* newShop という新店舗についてのコンポーネントを挿入する */}

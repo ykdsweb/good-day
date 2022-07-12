@@ -137,13 +137,20 @@ export default function NakashimaGuidelines() {
               <br />
               <br />
               <div className={styles.qrImage}>
-                <Image
-                  src={"/media/QR_LINE.png"}
-                  objectFit="contain"
-                  alt={"の画像です"}
-                  width={240}
-                  height={240}
-                />
+                <Link
+                  href={"https://page.line.me/153jsnax?openQrModal=true"}
+                  passHref
+                >
+                  <a>
+                    <Image
+                      src={"/media/QR_LINE.png"}
+                      objectFit="contain"
+                      alt={"の画像です"}
+                      width={240}
+                      height={240}
+                    />
+                  </a>
+                </Link>
               </div>
             </td>
           </tr>
@@ -152,7 +159,7 @@ export default function NakashimaGuidelines() {
           <tr className={styles.menuTabl}>
             <th className={styles.menuTableTh}>サロン見学</th>
             <td className={styles.menuTableTd}>
-              サロン見学について
+              <span className={styles.textBold}>サロン見学について</span>
               <br />
               <br />
               サロン見学をご希望のスタイリストさんはGOOD-DAY公式LINEよりご連絡ください。

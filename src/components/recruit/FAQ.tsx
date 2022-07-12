@@ -7,7 +7,9 @@ export default function FAQ() {
   return (
     <>
       <div className={styles.accordionArea}>
-        <h2 className={styles.accordionTitle}>よくある質問(FAQ)</h2>
+        <h2 id="FAQ" className={styles.accordionTitle}>
+          よくある質問(FAQ)
+        </h2>
         <input
           id="accordionCheck0"
           className={styles.accordionCheck}

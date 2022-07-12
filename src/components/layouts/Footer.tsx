@@ -57,8 +57,11 @@ export default function Footer() {
             </a>
           </Link>
           <ul className={styles.footerUl}>
-            <li></li>
-            <li></li>
+            <Link href={"/philosophy"} passHref>
+              <a>
+                <li>大切にしたいこと</li>
+              </a>
+            </Link>
           </ul>
         </div>
         <div className={styles.footerBrock}>
@@ -68,8 +71,16 @@ export default function Footer() {
             </a>
           </Link>
           <ul className={styles.footerUl}>
-            <li></li>
-            <li></li>
+            <Link href={"/recruit/#RecruitmentSummary"} passHref>
+              <a>
+                <li>募集概要</li>
+              </a>
+            </Link>
+            <Link href={"/recruit/#FAQ"} passHref>
+              <a>
+                <li>よくある質問(FAQ)</li>
+              </a>
+            </Link>
           </ul>
         </div>
         <div className={styles.footerBrock}>
