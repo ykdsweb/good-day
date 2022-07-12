@@ -1,10 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
+import HeadIn from "../components/layouts/Head";
 import styles from "../styles/Stylist/Detail.module.scss";
 
 export default function Custom404() {
   return (
     <>
+      <HeadIn
+        title={"ページがありません"}
+        description={"こちらは普段は表示されないページです"}
+        keyword={""}
+        image={""}
+        url={""}
+      />
       <main className={styles.detailArea}>
         <div className={styles.detail404Text}>
           <div>
