@@ -81,7 +81,8 @@
 }
 .articleLeft {
   padding: 1rem;
-  width: 70%;
+  text-align: center;
+  width: 30%;
 
   @media screen and (max-width:767px) {
     padding: 0;
@@ -92,6 +93,10 @@
   font-size:24px;
   font-weight: bold;
   margin-bottom: 1rem;
+
+  @media screen and (max-width:767px) {
+    text-align: center;
+ }
 }
 .articleBody {
   color: #696969;
@@ -102,15 +107,18 @@
 }
 .articleTag {
   font-size: 16px;
-
+  
   &:hover {
     color: #333333;
   }
+
+  @media screen and (max-width:767px) {
+    text-align: center;
+ }
 }
 .articleRight {
   padding: 1rem;
-  width: 30%;
-  text-align: center;
+  width: 70%;
 
   @media screen and (max-width:767px) {
     padding: 0;
