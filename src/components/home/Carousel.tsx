@@ -8,7 +8,7 @@ const ReactCarousel = () => {
   return (
     <>
       <Carousel>
-        <div>
+        <div className={styles.poyoyon}>
           <Link
             href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
             passHref
@@ -25,7 +25,7 @@ const ReactCarousel = () => {
           </Link>
           <p className={styles.carouselInfo}>楽しもう。自分だけの時間を。</p>
         </div>
-        <div>
+        <div className={styles.poyoyon}>
           <Link href={"/service"} passHref>
             <a>
               <Image
@@ -41,7 +41,7 @@ const ReactCarousel = () => {
             お客様とスタイリストに優しいヘアサロン。
           </p>
         </div>
-        <div>
+        <div className={styles.poyoyon}>
           <Link href={"/recruit"} passHref>
             <a>
               <Image

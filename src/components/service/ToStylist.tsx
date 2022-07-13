@@ -32,10 +32,6 @@ const ToStylist: React.FC = () => {
               <p className={styles.fontBord}>脅威の歩合</p>
               <p>やりがいと価値を感じて欲しい。</p>
             </li>
-          </ul>
-        </>
-        <>
-          <ul className={styles.flex}>
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_02.png"}
@@ -47,6 +43,10 @@ const ToStylist: React.FC = () => {
               <p className={styles.fontBord}>周りの目が気にならない</p>
               <p>いつもよりお客様もリラックス</p>
             </li>
+          </ul>
+        </>
+        <>
+          <ul className={styles.flex}>
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_03.png"}
@@ -58,10 +58,6 @@ const ToStylist: React.FC = () => {
               <p className={styles.fontBord}>コレを提供したかった…</p>
               <p>仕入も、持ち込みも自由です。</p>
             </li>
-          </ul>
-        </>
-        <>
-          <ul className={styles.flex}>
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_04.png"}
@@ -83,6 +79,43 @@ const ToStylist: React.FC = () => {
               />
               <p className={styles.fontBord}>意外だけど真理</p>
               <p>自分のペースで仕事できるから◎</p>
+            </li>
+          </ul>
+        </>
+        <>
+          <ul className={styles.flex}>
+          <li className={styles.stylistImage}>
+              <Image
+                src={"/media/Stylist_06.png"}
+                objectFit="contain"
+                alt={"の画像です"}
+                width={240}
+                height={240}
+              />
+              <p className={styles.fontBord}>お店が負担します①</p>
+              <p>タオルを気にせず営業。</p>
+            </li>
+            <li className={styles.stylistImage}>
+              <Image
+                src={"/media/Stylist_07.png"}
+                objectFit="contain"
+                alt={"の画像です"}
+                width={240}
+                height={240}
+              />
+              <p className={styles.fontBord}>お店が負担します②</p>
+              <p>システムトリートメントも。</p>
+            </li>
+            <li className={styles.stylistImage}>
+              <Image
+                src={"/media/Stylist_08.png"}
+                objectFit="contain"
+                alt={"の画像です"}
+                width={240}
+                height={240}
+              />
+              <p className={styles.fontBord}>GOOD-DAYのその先へ</p>
+              <p>独立に必要な知識やノウハウを。</p>
             </li>
           </ul>
         </>

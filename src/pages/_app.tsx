@@ -1,3 +1,4 @@
+// 全てのページで一度は読み込まれる可能性がある基幹ページ
 import "../styles/globals.css";
 import "nprogress/nprogress.css";
 import React, { useEffect } from "react";
