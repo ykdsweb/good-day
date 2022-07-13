@@ -84,7 +84,7 @@ const ToStylist: React.FC = () => {
         </>
         <>
           <ul className={styles.flex}>
-          <li className={styles.stylistImage}>
+            <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_06.png"}
                 objectFit="contain"
