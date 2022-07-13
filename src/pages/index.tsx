@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
 import Works from "../components/home/Works";
-import HeadIn from "../components/layouts/Head";
+import SEO from "../components/layouts/SEO";
 import styles from "../styles/Home.module.scss";
 import type { Article } from "../../types/article";
 import ReactCarousel from "../components/home/Carousel";
@@ -16,11 +16,15 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <>
-      <HeadIn
+      <SEO
         title={"GOOD-DAY(グッディ)|岡山県倉敷市の個室シェアサロン"}
-        description={""}
-        keyword={""}
-        image={""}
+        description={
+          "岡山県倉敷市にあるBeauty Hair Salon GOOD-DAY(グッディ)では、独立したい美容師さんを応援しています。全ての美容師に夢を与えられるようなシェアサロンを目指しています。"
+        }
+        keyword={
+          "岡山県,倉敷市,美容室,シェアサロン,GOOD-DAY,グッディ,独立,独立支援"
+        }
+        image={"/media/GOOD-DAY_mainLogo_05.png"}
         url={""}
       />
       <HamburgerMenu />

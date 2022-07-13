@@ -9,7 +9,7 @@ interface Props {
   url: string;
 }
 
-export default function HeadIn({
+export default function SEO({
   title,
   description,
   keyword,
@@ -35,7 +35,7 @@ export default function HeadIn({
       <meta name="twitter:image" content={image} />
       <link rel="canonical" href={url} />
       <link rel="shortcut icon" href={"/favicon.ico"} />
-      <link rel="apple-touch-icon" href={"https://t-cr.jp/logo.png"} />
+      <link rel="apple-touch-icon" href={"/GOOD-DAY_mainLogo.png"} />
     </Head>
   );
 }

@@ -3,7 +3,7 @@ import Router from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import HeadIn from "../components/layouts/Head";
+import SEO from "../components/layouts/SEO";
 import type { Stylist } from "../../types/stylist";
 import styles from "../styles/Stylist/Stylist.module.scss";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
@@ -15,11 +15,15 @@ type Props = {
 export default function Stylist({ stylists }: Props) {
   return (
     <>
-      <HeadIn
-        title={"GOOD-DAY会社概要|岡山県倉敷市の個室シェアサロン"}
-        description={""}
-        keyword={""}
-        image={""}
+      <SEO
+        title={"GOOD-DAYスタイリスト一覧|岡山県倉敷市の個室シェアサロン"}
+        description={
+          "Beauty Hair Salon GOOD-DAY(グッディ)では、美容師の仕事が大好きでたまらないスタイリストが在籍しています。それぞれ違う魅力を持ったあなただけのお気に入りの美容師に出会えますように。"
+        }
+        keyword={
+          "岡山県,倉敷市,美容室,シェアサロン,GOOD-DAY,グッディ,独立,独立支援,スタイリスト,スタイリスト一覧"
+        }
+        image={"/media/GOOD-DAY_stylists.jpg"}
         url={""}
       />
       <HamburgerMenu />
