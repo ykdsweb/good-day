@@ -34,7 +34,7 @@ export default function HeadIn({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <link rel="canonical" href={url} />
-      <link rel="shortcut icon" href={"https://t-cr.jp/favicon.ico"} />
+      <link rel="shortcut icon" href={"/favicon.ico"} />
       <link rel="apple-touch-icon" href={"https://t-cr.jp/logo.png"} />
     </Head>
   );
