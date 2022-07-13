@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import HeadIn from "../components/layouts/Head";
+import SEO from "../components/layouts/SEO";
 import styles from "../styles/Stylist/Detail.module.scss";
 
 export default function Custom404() {
   return (
     <>
-      <HeadIn
-        title={"ページがありません"}
+      <SEO
+        title={"ページがありません|岡山県倉敷市の個室シェアサロン"}
         description={"こちらは普段は表示されないページです"}
-        keyword={""}
-        image={""}
+        keyword={"404"}
+        image={"/media/404notfound_00.jpg"}
         url={""}
       />
       <main className={styles.detailArea}>
@@ -34,9 +34,11 @@ export default function Custom404() {
             height={1000}
           />
         </div>
-        <div className={styles.detail404Return}>
-          <Link href={`/`} passHref>
-            <a>Topページに戻る</a>
+        <div className={styles.next}>
+          <Link href={"/"} passHref>
+            <a className={styles.nextInner}>
+              <span className={styles.nextInnerIn}>Topに戻る</span>
+            </a>
           </Link>
         </div>
       </main>
