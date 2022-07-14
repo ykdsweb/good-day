@@ -7,46 +7,46 @@ export default function Maho() {
   return (
     <div className={styles.menu}>
       <h2 className={styles.menuTitle}>カット</h2>
-      <p className={styles.menuDetail}>(シャンプー・ブロー込)</p>
+      <p className={styles.menuDetail}>※SB(シャンプー・ブロー)込み</p>
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTableTr}>
-            <th className={styles.menuTableTh}>大人・大学生</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <th className={styles.menuTableTh}>カット</th>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <th className={styles.menuTableTh}>中高生</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>小学生</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>小学生未満</th>
             <td className={styles.menuTableTd}>(シャンプーなし)</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>前髪</th>
             <td className={styles.menuTableTd}>(シャンプーなし)</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -57,9 +57,9 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>大人・大学生</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -70,41 +70,41 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>リタッチ</th>
             <td className={styles.menuTableTd}>(45日まで)</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>リタッチ</th>
             <td className={styles.menuTableTd}>(45日以内)</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -115,33 +115,33 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>リタッチ</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
@@ -153,25 +153,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
@@ -184,8 +184,8 @@ export default function Maho() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>インナーカラー</th>
             <td className={styles.menuTableTd}>サイド&amp;バック</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
@@ -204,25 +204,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
@@ -231,8 +231,8 @@ export default function Maho() {
             <td className={styles.menuTableTd}>
               (カット・シャンプー・ブロー別)
             </td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -242,25 +242,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -272,33 +272,33 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>リタッチ</th>
             <td className={styles.menuTableTd}>3ヶ月以内</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -310,33 +310,33 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>リタッチ</th>
             <td className={styles.menuTableTd}>3ヶ月以内</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -347,17 +347,17 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>フロント</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ハーフ</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -369,33 +369,33 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ロング</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>リタッチ</th>
             <td className={styles.menuTableTd}>3ヶ月以内</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -406,17 +406,17 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>フロント</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ハーフ</th>
             <td className={styles.menuTableTd}>3ヶ月以内</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -432,25 +432,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>S</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>M</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>L</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
@@ -461,25 +461,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>S</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>M</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>L</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
@@ -490,25 +490,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>S</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>M</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>L</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -520,16 +520,16 @@ export default function Maho() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>リフレッシュスパ</th>
             <td className={styles.menuTableTd}>(20分)</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>リラックススパ</th>
             <td className={styles.menuTableTd}>30分</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -550,25 +550,25 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>アップスタイル</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ハーフスタイル</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>アイロン仕上げ</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
@@ -578,41 +578,41 @@ export default function Maho() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>カットトリートメント</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>カラーカット</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>カラーブロー</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>パーマカット</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>矯正カット</th>
-            <td className={styles.menuTableTd}>詳細</td>
-            <td className={styles.menuTableTd}>料金</td>
-            <td className={styles.menuTableTd}>時間</td>
+            <td className={styles.menuTableTd}>&nbsp;</td>
+            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>分</td>
           </tr>
         </tbody>
       </table>
