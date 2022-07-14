@@ -3,9 +3,23 @@ import { GetServerSideProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "../../libs/client";
+import SNS from "../../components/sns/SNS";
 import type { Stylist } from "../../../types/stylist";
 import styles from "../../styles/Stylist/Detail.module.scss";
 import HamburgerMenu from "../../components/layouts/HamburgerMenu";
+// 各スタイリストのSNSを読み込む
+import KatayamaSNS from "../../components/sns/KatayamaSNS";
+import MikaSNS from "../../components/sns/MikaSNS";
+import NozomiSNS from "../../components/sns/NozomiSNS";
+import NatsukiSNS from "../../components/sns/NatsukiSNS";
+import DaiSNS from "../../components/sns/DaiSNS";
+import JohnSNS from "../../components/sns/JohnSNS";
+import FujiiSNS from "../../components/sns/FujiiSNS";
+import IkemotoSNS from "../../components/sns/IkemotoSNS";
+import MaiSNS from "../../components/sns/MaiSNS";
+import YukaSNS from "../../components/sns/YukaSNS";
+import MahoSNS from "../../components/sns/MahoSNS";
+import NamiSNS from "../../components/sns/NamiSNS";
 // 各スタイリストのMenuを読み込む
 import Katayama from "../../components/menu/Katayama";
 import Mika from "../../components/menu/Mika";
@@ -29,12 +43,11 @@ export default function Stylist({ stylist }: Props) {
     <>
       <HamburgerMenu />
       <div className={styles.detailArea}>
-        <Link href={"/stylist"}>
+        <Link href={"/stylist"} passHref>
           <a>
             <h2 className={styles.detailMainTitle}>Stylist</h2>
           </a>
         </Link>
-
         <div className={styles.detailFlex}>
           <div className={styles.detailImage}>
             <Image
@@ -46,21 +59,37 @@ export default function Stylist({ stylist }: Props) {
               height={720}
             />
           </div>
-
           <div className={styles.detailRight}>
             <div>
-              <Link href={stylist.url}>
+              <Link href={stylist.url} passHref>
                 <a>
                   <div className={styles.detailSubTitle}>{stylist.title}</div>
                 </a>
               </Link>
+              {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
+              <div>
+                {!stylist.stylist_id && <></>}
+                {stylist.stylist_id == 1 ? <KatayamaSNS /> : <></>}
+                {stylist.stylist_id == 2 ? <MikaSNS /> : <></>}
+                {stylist.stylist_id == 3 ? <NozomiSNS /> : <></>}
+                {stylist.stylist_id == 4 ? <NatsukiSNS /> : <></>}
+                {stylist.stylist_id == 5 ? <DaiSNS /> : <></>}
+                {stylist.stylist_id == 6 ? <JohnSNS /> : <></>}
+                {stylist.stylist_id == 7 ? <FujiiSNS /> : <></>}
+                {stylist.stylist_id == 8 ? <IkemotoSNS /> : <></>}
+                {stylist.stylist_id == 9 ? <MaiSNS /> : <></>}
+                {stylist.stylist_id == 10 ? <YukaSNS /> : <></>}
+                {stylist.stylist_id == 11 ? <MahoSNS /> : <></>}
+                {stylist.stylist_id == 12 ? <NamiSNS /> : <></>}
+              </div>
 
-              {stylist.tag && (
-                <div className={styles.detailTag}>
-                  <div className="">#{stylist.tag}</div>
-                </div>
-              )}
-
+              <div className={styles.tag}>
+                {stylist.tag && (
+                  <div className={styles.detailTag}>
+                    <div className="">#{stylist.tag}</div>
+                  </div>
+                )}
+              </div>
               <div>
                 {/* Prevent HTML tags from being output */}
                 <div
@@ -80,7 +109,6 @@ export default function Stylist({ stylist }: Props) {
             </div>
           </div>
         </div>
-
         <div className={styles.detailBody}>
           {/* Prevent HTML tags from being output */}
           <div
@@ -101,7 +129,6 @@ export default function Stylist({ stylist }: Props) {
               height={250}
             />
           </div>
-
           <div className={styles.detailStyleImage}>
             <Image
               className=""
@@ -112,7 +139,6 @@ export default function Stylist({ stylist }: Props) {
               height={250}
             />
           </div>
-
           <div className={styles.detailStyleImage}>
             <Image
               className=""
