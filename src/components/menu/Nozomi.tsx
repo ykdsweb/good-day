@@ -157,7 +157,7 @@ export default function Nozomi() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>縮毛矯正S</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥13,200</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>
@@ -165,7 +165,7 @@ export default function Nozomi() {
           <tr>
             <th className={styles.menuTableTh}>縮毛矯正M</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥15,400</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>
@@ -173,7 +173,7 @@ export default function Nozomi() {
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>縮毛矯正L</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥17,600</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>
@@ -181,7 +181,7 @@ export default function Nozomi() {
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>前髪のみ</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥5,500</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>
@@ -189,7 +189,7 @@ export default function Nozomi() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>部分</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥9,240</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>
@@ -197,7 +197,7 @@ export default function Nozomi() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>パーマ落としストレート</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥7,700</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>
@@ -205,7 +205,7 @@ export default function Nozomi() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>トリートメントストレート</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
+            <td className={styles.menuTableTd}>¥6,600</td>
             <td className={styles.menuTableTd}>90〜240分</td>
           </tr>
         </tbody>

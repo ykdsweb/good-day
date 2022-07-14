@@ -162,24 +162,24 @@ export default function Natsuki() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ショート</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
-            <td className={styles.menuTableTd}>分</td>
+            <td className={styles.menuTableTd}>¥8,600</td>
+            <td className={styles.menuTableTd}>210分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>ミディアム</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
-            <td className={styles.menuTableTd}>分</td>
+            <td className={styles.menuTableTd}>¥9,100</td>
+            <td className={styles.menuTableTd}>210〜240分</td>
           </tr>
         </tbody>
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ロング</th>
             <td className={styles.menuTableTd}>&nbsp;</td>
-            <td className={styles.menuTableTd}>¥</td>
-            <td className={styles.menuTableTd}>分</td>
+            <td className={styles.menuTableTd}>¥9,600</td>
+            <td className={styles.menuTableTd}>210〜240分</td>
           </tr>
         </tbody>
       </table>
