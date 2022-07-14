@@ -9,45 +9,50 @@ const ReactCarousel = () => {
     <>
       <Carousel>
         <div className={styles.poyoyon}>
+          <Image
+            className=""
+            src={"/media/main_slider_00.jpg"}
+            alt="GOOD-DAY中島店1"
+            width={1920}
+            height={1200}
+          />
           <Link
             href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
             passHref
           >
             <a>
-              <Image
-                className=""
-                src={`/media/main_slider_00.jpg`}
-                alt="画像の画像です"
-                width={1920}
-                height={1200}
-              />
+              <p className={styles.carouselInfo}>ご予約はこちらから</p>
             </a>
           </Link>
-          <p className={styles.carouselInfo}>楽しもう。自分だけの時間を。</p>
         </div>
         <div className={styles.poyoyon}>
           <Link href={"/service"} passHref>
             <a>
               <Image
                 className=""
-                src={`/media/main_slider_01.jpg`}
-                alt="画像の画像です"
+                src={"/media/main_slider_01.jpg"}
+                alt="GOOD-DAY中島店2"
                 width={2000}
                 height={1250}
               />
             </a>
           </Link>
-          <p className={styles.carouselInfo}>
-            お客様とスタイリストに優しいヘアサロン。
-          </p>
+          <Link
+            href={"https://page.line.me/153jsnax?openQrModal=true"}
+            passHref
+          >
+            <a>
+              <p className={styles.carouselInfo}>公式LINEお友達登録はこちら</p>
+            </a>
+          </Link>
         </div>
         <div className={styles.poyoyon}>
           <Link href={"/recruit"} passHref>
             <a>
               <Image
                 className=""
-                src={`/media/main_slider_02.jpg`}
-                alt="画像の画像です"
+                src={"/media/main_slider_02.jpg"}
+                alt="GOOD-DAY中島店3"
                 width={2000}
                 height={1250}
               />
