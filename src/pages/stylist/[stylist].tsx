@@ -3,11 +3,10 @@ import { GetServerSideProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "../../libs/client";
-import SNS from "../../components/sns/SNS";
 import type { Stylist } from "../../../types/stylist";
 import styles from "../../styles/Stylist/Detail.module.scss";
 import HamburgerMenu from "../../components/layouts/HamburgerMenu";
-// 各スタイリストのSNSを読み込む
+// 各スタイリストのSNSを読み込む(暫定適用)
 import KatayamaSNS from "../../components/sns/KatayamaSNS";
 import MikaSNS from "../../components/sns/MikaSNS";
 import NozomiSNS from "../../components/sns/NozomiSNS";
@@ -20,7 +19,7 @@ import MaiSNS from "../../components/sns/MaiSNS";
 import YukaSNS from "../../components/sns/YukaSNS";
 import MahoSNS from "../../components/sns/MahoSNS";
 import NamiSNS from "../../components/sns/NamiSNS";
-// 各スタイリストのMenuを読み込む
+// 各スタイリストのMenuを読み込む(暫定適用)
 import Katayama from "../../components/menu/Katayama";
 import Mika from "../../components/menu/Mika";
 import Nozomi from "../../components/menu/Nozomi";
@@ -33,6 +32,19 @@ import Mai from "../../components/menu/Mai";
 import Yuka from "../../components/menu/Yuka";
 import Maho from "../../components/menu/Maho";
 import Nami from "../../components/menu/Nami";
+// 各スタイリストのPaginationを読み込む(暫定適用)
+import KatayamaPagination from "../../components/pagination/KatayamaPagination";
+import MikaPagination from "../../components/pagination/MikaPagination";
+import NozomiPagination from "../../components/pagination/NozomiPagination";
+import NatsukiPagination from "../../components/pagination/NatsukiPagination";
+import DaiPagination from "../../components/pagination/DaiPagination";
+import JohnPagination from "../../components/pagination/JohnPagination";
+import FujiiPagination from "../../components/pagination/FujiiPagination";
+import IkemotoPagination from "../../components/pagination/IkemotoPagination";
+import MaiPagination from "../../components/pagination/MaiPagination";
+import YukaPagination from "../../components/pagination/YukaPagination";
+import MahoPagination from "../../components/pagination/MahoPagination";
+import NamiPagination from "../../components/pagination/NamiPagination";
 
 type Props = {
   stylist: Stylist;
@@ -179,13 +191,35 @@ export default function Stylist({ stylist }: Props) {
             </a>
           </Link>
         </div>
-        <div className={styles.next}>
+        {/* ここでstylistIdを認識して、各自のページネーションを表示(暫定適用) */}
+        <div>
+          {!stylist.stylist_id && <></>}
+          {stylist.stylist_id == 1 ? <KatayamaPagination /> : <></>}
+          {stylist.stylist_id == 2 ? <MikaPagination /> : <></>}
+          {stylist.stylist_id == 3 ? <NozomiPagination /> : <></>}
+          {stylist.stylist_id == 4 ? <NatsukiPagination /> : <></>}
+          {stylist.stylist_id == 5 ? <DaiPagination /> : <></>}
+          {stylist.stylist_id == 6 ? <JohnPagination /> : <></>}
+          {stylist.stylist_id == 7 ? <FujiiPagination /> : <></>}
+          {stylist.stylist_id == 8 ? <IkemotoPagination /> : <></>}
+          {stylist.stylist_id == 9 ? <MaiPagination /> : <></>}
+          {stylist.stylist_id == 10 ? <YukaPagination /> : <></>}
+          {stylist.stylist_id == 11 ? <MahoPagination /> : <></>}
+          {stylist.stylist_id == 12 ? <NamiPagination /> : <></>}
+        </div>
+
+        {/* <div className={styles.nextFlex}>
           <Link href={"/stylist"} passHref>
             <a className={styles.nextInner}>
               <span className={styles.nextInnerIn}>他のStylistを見る</span>
             </a>
           </Link>
-        </div>
+          <Link href={"/stylist"} passHref>
+            <a className={styles.nextInner}>
+              <span className={styles.nextInnerIn}>他のStylistを見る</span>
+            </a>
+          </Link>
+        </div> */}
       </div>
     </>
   );

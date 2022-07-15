@@ -12,12 +12,12 @@ export default function NamiSNS() {
             <div className={styles.blog}></div>
           </a>
         </Link>
-        <Link href={"/"} passHref>
+        <Link href={"https://www.instagram.com/toukunami.ono"} passHref>
           <a>
             <div className={styles.instagram}></div>
           </a>
         </Link>
-        <Link href={"https://www.instagram.com/kanda.toshikazu/"} passHref>
+        <Link href={"https://lin.ee/aEvDxH3"} passHref>
           <a>
             <div className={styles.line}></div>
           </a>
