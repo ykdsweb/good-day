@@ -207,7 +207,6 @@ export default function Stylist({ stylist }: Props) {
           {stylist.stylist_id == 11 ? <MahoPagination /> : <></>}
           {stylist.stylist_id == 12 ? <NamiPagination /> : <></>}
         </div>
-
         {/* <div className={styles.nextFlex}>
           <Link href={"/stylist"} passHref>
             <a className={styles.nextInner}>
