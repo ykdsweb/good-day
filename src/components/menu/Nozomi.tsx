@@ -68,7 +68,7 @@ export default function Nozomi() {
       </table>
 
       <h2 className={styles.menuTitle}>カラー</h2>
-      <p className={styles.menuDetail}>(シャンプー込)</p>
+      <p className={styles.menuDetail}>(シャンプー・ブロー別)</p>
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTablLast}>
@@ -260,7 +260,6 @@ export default function Nozomi() {
       </table>
 
       <h2 className={styles.menuTitle}>シャンプー</h2>
-      <p className={styles.menuDetail}>(カット・シャンプー・ブロー込)</p>
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTableTr}>

@@ -201,6 +201,17 @@ padding: 1rem;
   width: 50%;
   max-width: 300px;
 }
+.nextFlex {
+  background-color: #eeeeee;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  margin: 5.8rem auto 2.4rem;
+  text-align: center;
+  width: 50%;
+  max-width: 300px;
+}
 .nextInner {
   align-items: center;
   background: #fff;
