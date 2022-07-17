@@ -33,8 +33,8 @@ export default function Article({ article }: Props) {
             src={article.eye_catch.url}
             objectFit="contain"
             alt={article.title + "の画像です"}
-            width={2000}
-            height={2000}
+            width={960}
+            height={960}
           />
         </div>
         <div className="">
