@@ -141,20 +141,36 @@ export default function Stylist({ stylist }: Props) {
         {/* ここで各自のstyleを表示 */}
         <h2 className={styles.detailMainTitle}>Hair Style</h2>
         <div className={styles.detailStyle}>
-          {items.map((item) => {
-            return (
-              <div key={item}>
-                <Image
-                  src={item}
-                  className=""
-                  objectFit="contain"
-                  alt={stylist.title + "のスタイルです。"}
-                  width={240}
-                  height={240}
-                />
-              </div>
-            );
-          })}
+          <div className={styles.detailStyleImage}>
+            <Image
+              className=""
+              src={stylist.style1.url}
+              objectFit="contain"
+              alt={stylist.title + "のスタイルです。"}
+              width={1000}
+              height={800}
+            />
+          </div>
+          <div className={styles.detailStyleImage}>
+            <Image
+              className=""
+              src={stylist.style2.url}
+              objectFit="contain"
+              alt={stylist.title + "のスタイルです。"}
+              width={1000}
+              height={800}
+            />
+          </div>
+          <div className={styles.detailStyleImage}>
+            <Image
+              className=""
+              src={stylist.style3.url}
+              objectFit="contain"
+              alt={stylist.title + "のスタイルです。"}
+              width={1000}
+              height={800}
+            />
+          </div>
         </div>
         {/* ここでstylistIdを認識して、各自のメニューを表示します。 */}
         <div>
