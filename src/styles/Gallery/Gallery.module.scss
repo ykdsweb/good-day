@@ -114,3 +114,11 @@
     margin-bottom: 2rem;
   }
 }
+.stylistImageHover {
+  box-sizing: border-box;
+
+  &:hover {
+    outline:solid 4px #FF67B3;
+    outline-offset: -10px;
+  }
+}

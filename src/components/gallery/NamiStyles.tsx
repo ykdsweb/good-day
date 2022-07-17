@@ -10,10 +10,11 @@ const NamiStyles: React.FC = () => {
           <a>
             <li className={styles.stylistImage}>
               <Image
+                className={styles.stylistImageHover}
                 src={"/styles/Nami_03.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
-                width={240}
+                width={178}
                 height={240}
               />
             </li>
@@ -23,10 +24,11 @@ const NamiStyles: React.FC = () => {
           <a>
             <li className={styles.stylistImage}>
               <Image
+                className={styles.stylistImageHover}
                 src={"/styles/Nami_01.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
-                width={240}
+                width={178}
                 height={240}
               />
             </li>
@@ -36,10 +38,11 @@ const NamiStyles: React.FC = () => {
           <a>
             <li className={styles.stylistImage}>
               <Image
+                className={styles.stylistImageHover}
                 src={"/styles/Nami_00.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
-                width={240}
+                width={178}
                 height={240}
               />
             </li>
