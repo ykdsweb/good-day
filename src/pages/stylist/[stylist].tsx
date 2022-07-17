@@ -51,8 +51,7 @@ type Props = {
 };
 
 export default function Stylist({ stylist }: Props) {
-  const items = [stylist.style3.url, stylist.style2.url, stylist.style1.url];
-  const stylistIds = [stylist.stylist_id];
+  const stylistIds: number[] = [stylist.stylist_id];
   return (
     <>
       <HamburgerMenu />
@@ -80,30 +79,65 @@ export default function Stylist({ stylist }: Props) {
                   <div className={styles.detailSubTitle}>{stylist.title}</div>
                 </a>
               </Link>
-
               {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
+              {/* <div>
+                {stylistIds.map((id) => {
+                  return (
+                    <div key={id}>
+                      {( () => {
+                        if (!id == null) {
+                          return <></>;
+                        } else if (id == 1) {
+                          return <KatayamaSNS />;
+                        } else if (id == 2) {
+                          return <MikaSNS />;
+                        } else if (id == 3) {
+                          return <NozomiSNS />;
+                        } else if (id == 4) {
+                          return <NatsukiSNS />;
+                        } else if (id == 5) {
+                          return <DaiSNS />;
+                        } else if (id == 6) {
+                          return <JohnSNS />;
+                        } else if (id == 7) {
+                          return <FujiiSNS />;
+                        } else if (id == 8) {
+                          return <IkemotoSNS />;
+                        } else if (id == 9) {
+                          return <MaiSNS />;
+                        } else if (id == 10) {
+                          return <YukaSNS />;
+                        } else if (id == 11) {
+                          return <MahoSNS />;
+                        } else if (id == 12) {
+                          return <NamiSNS />;
+                        }
+                      }) () };
+                    </div>
+                  );
+                })}
+              </div> */}
+              {/* ここでstylistIdを認識して、各自のSNSメニューを表示する2 */}
               <div>
                 {stylistIds.map((id) => {
                   return (
                     <div key={id}>
-                      {!id && <></>}
-                      {id == 1 ? <KatayamaSNS /> : <></>}
-                      {id == 2 ? <MikaSNS /> : <></>}
-                      {id == 3 ? <NozomiSNS /> : <></>}
-                      {id == 4 ? <NatsukiSNS /> : <></>}
-                      {id == 5 ? <DaiSNS /> : <></>}
-                      {id == 6 ? <JohnSNS /> : <></>}
-                      {id == 7 ? <FujiiSNS /> : <></>}
-                      {id == 8 ? <IkemotoSNS /> : <></>}
-                      {id == 9 ? <MaiSNS /> : <></>}
-                      {id == 10 ? <YukaSNS /> : <></>}
-                      {id == 11 ? <MahoSNS /> : <></>}
-                      {id == 12 ? <NamiSNS /> : <></>}
+                      {id == 1 && <KatayamaSNS />}
+                      {id == 2 && <MikaSNS />}
+                      {id == 3 && <NozomiSNS />}
+                      {id == 4 && <NatsukiSNS />}
+                      {id == 5 && <DaiSNS />}
+                      {id == 6 && <JohnSNS />}
+                      {id == 7 && <FujiiSNS />}
+                      {id == 8 && <IkemotoSNS />}
+                      {id == 9 && <MaiSNS />}
+                      {id == 10 && <YukaSNS />}
+                      {id == 11 && <MahoSNS />}
+                      {id == 12 && <NamiSNS />}
                     </div>
                   );
                 })}
               </div>
-
               <div className={styles.tag}>
                 {stylist.tag && (
                   <div className={styles.detailTag}>
@@ -177,19 +211,18 @@ export default function Stylist({ stylist }: Props) {
           {stylistIds.map((id) => {
             return (
               <div key={id}>
-                {!id && <></>}
-                {id == 1 ? <Katayama /> : <></>}
-                {id == 2 ? <Mika /> : <></>}
-                {id == 3 ? <Nozomi /> : <></>}
-                {id == 4 ? <Natsuki /> : <></>}
-                {id == 5 ? <Dai /> : <></>}
-                {id == 6 ? <John /> : <></>}
-                {id == 7 ? <Fujii /> : <></>}
-                {id == 8 ? <Ikemoto /> : <></>}
-                {id == 9 ? <Mai /> : <></>}
-                {id == 10 ? <Yuka /> : <></>}
-                {id == 11 ? <Maho /> : <></>}
-                {id == 12 ? <Nami /> : <></>}
+                {id == 1 && <Katayama />}
+                {id == 2 && <Mika />}
+                {id == 3 && <Nozomi />}
+                {id == 4 && <Natsuki />}
+                {id == 5 && <Dai />}
+                {id == 6 && <John />}
+                {id == 7 && <Fujii />}
+                {id == 8 && <Ikemoto />}
+                {id == 9 && <Mai />}
+                {id == 10 && <Yuka />}
+                {id == 11 && <Maho />}
+                {id == 12 && <Nami />}
               </div>
             );
           })}
@@ -212,19 +245,18 @@ export default function Stylist({ stylist }: Props) {
           {stylistIds.map((id) => {
             return (
               <div key={id}>
-                {!id && <></>}
-                {id == 1 ? <KatayamaPagination /> : <></>}
-                {id == 2 ? <MikaPagination /> : <></>}
-                {id == 3 ? <NozomiPagination /> : <></>}
-                {id == 4 ? <NatsukiPagination /> : <></>}
-                {id == 5 ? <DaiPagination /> : <></>}
-                {id == 6 ? <JohnPagination /> : <></>}
-                {id == 7 ? <FujiiPagination /> : <></>}
-                {id == 8 ? <IkemotoPagination /> : <></>}
-                {id == 9 ? <MaiPagination /> : <></>}
-                {id == 10 ? <YukaPagination /> : <></>}
-                {id == 11 ? <MahoPagination /> : <></>}
-                {id == 12 ? <NamiPagination /> : <></>}
+                {id == 1 && <KatayamaPagination />}
+                {id == 2 && <MikaPagination />}
+                {id == 3 && <NozomiPagination />}
+                {id == 4 && <NatsukiPagination />}
+                {id == 5 && <DaiPagination />}
+                {id == 6 && <JohnPagination />}
+                {id == 7 && <FujiiPagination />}
+                {id == 8 && <IkemotoPagination />}
+                {id == 9 && <MaiPagination />}
+                {id == 10 && <YukaPagination />}
+                {id == 11 && <MahoPagination />}
+                {id == 12 && <NamiPagination />}
               </div>
             );
           })}
