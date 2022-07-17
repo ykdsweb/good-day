@@ -1,0 +1,53 @@
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../../styles/Gallery/Gallery.module.scss";
+
+const NamiStyles: React.FC = () => {
+  return (
+    <>
+      <ul className={styles.flex}>
+        <Link href={"/stylist/nami"}>
+          <a>
+            <li className={styles.stylistImage}>
+              <Image
+                src={"/styles/Nami_03.jpg"}
+                objectFit="contain"
+                alt={"の画像です"}
+                width={240}
+                height={240}
+              />
+            </li>
+          </a>
+        </Link>
+        <Link href={"/stylist/nami"}>
+          <a>
+            <li className={styles.stylistImage}>
+              <Image
+                src={"/styles/Nami_01.jpg"}
+                objectFit="contain"
+                alt={"の画像です"}
+                width={240}
+                height={240}
+              />
+            </li>
+          </a>
+        </Link>
+        <Link href={"/stylist/nami"}>
+          <a>
+            <li className={styles.stylistImage}>
+              <Image
+                src={"/styles/Nami_00.jpg"}
+                objectFit="contain"
+                alt={"の画像です"}
+                width={240}
+                height={240}
+              />
+            </li>
+          </a>
+        </Link>
+      </ul>
+    </>
+  );
+};
+
+export default NamiStyles;

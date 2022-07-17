@@ -12,12 +12,12 @@ export default function MaiSNS() {
             <div className={styles.blog}></div>
           </a>
         </Link>
-        <Link href={"/"} passHref>
+        <Link href={"https://www.instagram.com/maiii1933/"} passHref>
           <a>
             <div className={styles.instagram}></div>
           </a>
         </Link>
-        <Link href={"/"} passHref>
+        <Link href={"https://lin.ee/fzrK0j2"} passHref>
           <a>
             <div className={styles.line}></div>
           </a>

@@ -51,6 +51,8 @@ type Props = {
 };
 
 export default function Stylist({ stylist }: Props) {
+  const items = [stylist.style3.url, stylist.style2.url, stylist.style1.url];
+  const stylistIds = [stylist.stylist_id];
   return (
     <>
       <HamburgerMenu />
@@ -78,21 +80,28 @@ export default function Stylist({ stylist }: Props) {
                   <div className={styles.detailSubTitle}>{stylist.title}</div>
                 </a>
               </Link>
+
               {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
               <div>
-                {!stylist.stylist_id && <></>}
-                {stylist.stylist_id == 1 ? <KatayamaSNS /> : <></>}
-                {stylist.stylist_id == 2 ? <MikaSNS /> : <></>}
-                {stylist.stylist_id == 3 ? <NozomiSNS /> : <></>}
-                {stylist.stylist_id == 4 ? <NatsukiSNS /> : <></>}
-                {stylist.stylist_id == 5 ? <DaiSNS /> : <></>}
-                {stylist.stylist_id == 6 ? <JohnSNS /> : <></>}
-                {stylist.stylist_id == 7 ? <FujiiSNS /> : <></>}
-                {stylist.stylist_id == 8 ? <IkemotoSNS /> : <></>}
-                {stylist.stylist_id == 9 ? <MaiSNS /> : <></>}
-                {stylist.stylist_id == 10 ? <YukaSNS /> : <></>}
-                {stylist.stylist_id == 11 ? <MahoSNS /> : <></>}
-                {stylist.stylist_id == 12 ? <NamiSNS /> : <></>}
+                {stylistIds.map((id) => {
+                  return (
+                    <div key={id}>
+                      {!id && <></>}
+                      {id == 1 ? <KatayamaSNS /> : <></>}
+                      {id == 2 ? <MikaSNS /> : <></>}
+                      {id == 3 ? <NozomiSNS /> : <></>}
+                      {id == 4 ? <NatsukiSNS /> : <></>}
+                      {id == 5 ? <DaiSNS /> : <></>}
+                      {id == 6 ? <JohnSNS /> : <></>}
+                      {id == 7 ? <FujiiSNS /> : <></>}
+                      {id == 8 ? <IkemotoSNS /> : <></>}
+                      {id == 9 ? <MaiSNS /> : <></>}
+                      {id == 10 ? <YukaSNS /> : <></>}
+                      {id == 11 ? <MahoSNS /> : <></>}
+                      {id == 12 ? <NamiSNS /> : <></>}
+                    </div>
+                  );
+                })}
               </div>
 
               <div className={styles.tag}>
@@ -129,54 +138,45 @@ export default function Stylist({ stylist }: Props) {
             }}
           />
         </div>
+        {/* ここで各自のstyleを表示 */}
         <h2 className={styles.detailMainTitle}>Hair Style</h2>
         <div className={styles.detailStyle}>
-          <div className={styles.detailStyleImage}>
-            <Image
-              className=""
-              src={stylist.style1.url}
-              objectFit="contain"
-              alt={stylist.title + "のスタイルです。"}
-              width={500}
-              height={250}
-            />
-          </div>
-          <div className={styles.detailStyleImage}>
-            <Image
-              className=""
-              src={stylist.style2.url}
-              objectFit="contain"
-              alt={stylist.title + "のスタイルです。"}
-              width={500}
-              height={250}
-            />
-          </div>
-          <div className={styles.detailStyleImage}>
-            <Image
-              className=""
-              src={stylist.style3.url}
-              objectFit="contain"
-              alt={stylist.title + "のスタイルです。"}
-              width={500}
-              height={250}
-            />
-          </div>
+          {items.map((item) => {
+            return (
+              <div key={item}>
+                <Image
+                  src={item}
+                  className=""
+                  objectFit="contain"
+                  alt={stylist.title + "のスタイルです。"}
+                  width={240}
+                  height={240}
+                />
+              </div>
+            );
+          })}
         </div>
         {/* ここでstylistIdを認識して、各自のメニューを表示します。 */}
         <div>
-          {!stylist.stylist_id && <></>}
-          {stylist.stylist_id == 1 ? <Katayama /> : <></>}
-          {stylist.stylist_id == 2 ? <Mika /> : <></>}
-          {stylist.stylist_id == 3 ? <Nozomi /> : <></>}
-          {stylist.stylist_id == 4 ? <Natsuki /> : <></>}
-          {stylist.stylist_id == 5 ? <Dai /> : <></>}
-          {stylist.stylist_id == 6 ? <John /> : <></>}
-          {stylist.stylist_id == 7 ? <Fujii /> : <></>}
-          {stylist.stylist_id == 8 ? <Ikemoto /> : <></>}
-          {stylist.stylist_id == 9 ? <Mai /> : <></>}
-          {stylist.stylist_id == 10 ? <Yuka /> : <></>}
-          {stylist.stylist_id == 11 ? <Maho /> : <></>}
-          {stylist.stylist_id == 12 ? <Nami /> : <></>}
+          {stylistIds.map((id) => {
+            return (
+              <div key={id}>
+                {!id && <></>}
+                {id == 1 ? <Katayama /> : <></>}
+                {id == 2 ? <Mika /> : <></>}
+                {id == 3 ? <Nozomi /> : <></>}
+                {id == 4 ? <Natsuki /> : <></>}
+                {id == 5 ? <Dai /> : <></>}
+                {id == 6 ? <John /> : <></>}
+                {id == 7 ? <Fujii /> : <></>}
+                {id == 8 ? <Ikemoto /> : <></>}
+                {id == 9 ? <Mai /> : <></>}
+                {id == 10 ? <Yuka /> : <></>}
+                {id == 11 ? <Maho /> : <></>}
+                {id == 12 ? <Nami /> : <></>}
+              </div>
+            );
+          })}
         </div>
         <p className={styles.menuDetail}>
           ※所要時間につきましては、当日の予約状況により変動する可能性もございます。
@@ -193,32 +193,26 @@ export default function Stylist({ stylist }: Props) {
         </div>
         {/* ここでstylistIdを認識して、各自のページネーションを表示(暫定適用) */}
         <div>
-          {!stylist.stylist_id && <></>}
-          {stylist.stylist_id == 1 ? <KatayamaPagination /> : <></>}
-          {stylist.stylist_id == 2 ? <MikaPagination /> : <></>}
-          {stylist.stylist_id == 3 ? <NozomiPagination /> : <></>}
-          {stylist.stylist_id == 4 ? <NatsukiPagination /> : <></>}
-          {stylist.stylist_id == 5 ? <DaiPagination /> : <></>}
-          {stylist.stylist_id == 6 ? <JohnPagination /> : <></>}
-          {stylist.stylist_id == 7 ? <FujiiPagination /> : <></>}
-          {stylist.stylist_id == 8 ? <IkemotoPagination /> : <></>}
-          {stylist.stylist_id == 9 ? <MaiPagination /> : <></>}
-          {stylist.stylist_id == 10 ? <YukaPagination /> : <></>}
-          {stylist.stylist_id == 11 ? <MahoPagination /> : <></>}
-          {stylist.stylist_id == 12 ? <NamiPagination /> : <></>}
+          {stylistIds.map((id) => {
+            return (
+              <div key={id}>
+                {!id && <></>}
+                {id == 1 ? <KatayamaPagination /> : <></>}
+                {id == 2 ? <MikaPagination /> : <></>}
+                {id == 3 ? <NozomiPagination /> : <></>}
+                {id == 4 ? <NatsukiPagination /> : <></>}
+                {id == 5 ? <DaiPagination /> : <></>}
+                {id == 6 ? <JohnPagination /> : <></>}
+                {id == 7 ? <FujiiPagination /> : <></>}
+                {id == 8 ? <IkemotoPagination /> : <></>}
+                {id == 9 ? <MaiPagination /> : <></>}
+                {id == 10 ? <YukaPagination /> : <></>}
+                {id == 11 ? <MahoPagination /> : <></>}
+                {id == 12 ? <NamiPagination /> : <></>}
+              </div>
+            );
+          })}
         </div>
-        {/* <div className={styles.nextFlex}>
-          <Link href={"/stylist"} passHref>
-            <a className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>他のStylistを見る</span>
-            </a>
-          </Link>
-          <Link href={"/stylist"} passHref>
-            <a className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>他のStylistを見る</span>
-            </a>
-          </Link>
-        </div> */}
       </div>
     </>
   );

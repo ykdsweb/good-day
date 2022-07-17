@@ -18,8 +18,6 @@ const Works: React.FC = () => {
                 width={240}
                 height={240}
               />
-              <p className={styles.fontBord}>収入Upも夢じゃない</p>
-              <p>夢のために貯金できます。</p>
             </li>
             <li className={styles.stylistImage}>
               <Image
@@ -29,8 +27,6 @@ const Works: React.FC = () => {
                 width={240}
                 height={240}
               />
-              <p className={styles.fontBord}>脅威の歩合</p>
-              <p>やりがいと価値を感じて欲しい。</p>
             </li>
             <li className={styles.stylistImage}>
               <Image
@@ -40,8 +36,6 @@ const Works: React.FC = () => {
                 width={240}
                 height={240}
               />
-              <p className={styles.fontBord}>周りの目が気にならない</p>
-              <p>いつもよりお客様もリラックス</p>
             </li>
           </ul>
         </>
@@ -55,8 +49,6 @@ const Works: React.FC = () => {
                 width={240}
                 height={240}
               />
-              <p className={styles.fontBord}>コレを提供したかった…</p>
-              <p>仕入も、持ち込みも自由です。</p>
             </li>
             <li className={styles.stylistImage}>
               <Image
@@ -66,8 +58,6 @@ const Works: React.FC = () => {
                 width={240}
                 height={240}
               />
-              <p className={styles.fontBord}>土日祝休めちゃう</p>
-              <p>バランスを見て、好きなだけ。</p>
             </li>
             <li className={styles.stylistImage}>
               <Image
@@ -77,8 +67,6 @@ const Works: React.FC = () => {
                 width={240}
                 height={240}
               />
-              <p className={styles.fontBord}>意外だけど真理</p>
-              <p>自分のペースで仕事できるから◎</p>
             </li>
           </ul>
         </>

@@ -94,7 +94,7 @@ padding: 1rem;
   }
 }
 .detailProfile {
-  height: 12rem;
+  height: 6rem;
   margin-top: 2rem;
   overflow: scroll;
   width: 100%;
@@ -115,20 +115,15 @@ padding: 1rem;
 }
 .detailStyle {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 2rem;
 
   @media (max-width: 767px) {
     display: block;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
     padding: 0;
+    text-align: center;
   }
-}
-.detailStyleImage {
-  text-align: center;
-  height: auto;
-  margin: 2rem auto;
-  width: 100%;
 }
 .detailUrl {
   color: #333333;
@@ -196,7 +191,7 @@ padding: 1rem;
   background-color: #eeeeee;
   border-radius: 32px;
   font-weight: bold;
-  margin: 5.8rem auto 2.4rem;
+  margin: 2.4rem auto;
   text-align: center;
   width: 50%;
   max-width: 300px;
