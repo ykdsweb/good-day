@@ -8,8 +8,8 @@ import styles from "../styles/Home.module.scss";
 import Styles from "../components/gallery/styles";
 import type { Article } from "../../types/article";
 import ReactCarousel from "../components/home/Carousel";
-import HamburgerMenu from "../components/layouts/HamburgerMenu";
 import MakeFriends from "../components/home/MakeFriends";
+import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 type Props = {
   articles: Array<Article>;
@@ -33,7 +33,7 @@ export default function Home({ articles }: Props) {
       <div className={styles.mainHome}>
         <ReactCarousel />
         <div className={styles.articleArea}>
-          <h2 className={styles.articleMainTitle}>Topics</h2>
+          <h2 className={styles.articleMainTitle}>News &amp; Topics</h2>
           {articles.map((article) => (
             <div className={styles.articleSingle} key={article.id}>
               <div className={styles.articleFlex}>

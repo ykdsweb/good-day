@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import FAQ from "../../components/recruit/FAQ";
 import NakashimaGuidelines from "./NakashimaGuidelines";
+import MakeFriends from "../../components/home/MakeFriends";
 import styles from "../../styles/Recruit/Recruit.module.scss";
 
 export default function Recruitment() {
@@ -27,9 +29,9 @@ export default function Recruitment() {
           <h2 id="RecruitmentSummary" className={styles.subTitle}>
             募集要項
           </h2>
-          {/* stylistMenuと同じコンポーネントを挿入 */}
           <NakashimaGuidelines />
-          {/* newShop という新店舗についてのコンポーネントを挿入する */}
+          <FAQ />
+          <MakeFriends />
         </>
       </div>
     </>

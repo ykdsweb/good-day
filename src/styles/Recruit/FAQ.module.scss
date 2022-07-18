@@ -1,9 +1,10 @@
 .accordionArea {
-  margin: 5.8rem auto 1rem;
-  width: 100%;
+  margin: 5.8rem auto;
+  width: 80%;
 
   @media screen and (max-width:767px) {
     margin-top: 7.8rem;
+    width: 96%;
   }
 }
 .accordionTitle {
@@ -15,11 +16,13 @@
   display: none;
 }
 .accordionLabel {
-  background: #eeeeee;
+  background: #fafafa;
   color: #333333;
   display: block;
   height: 4rem;
   margin-bottom: 1px;
+  outline: 1px solid #eeeeee;
+  outline-offset: -1px;
   padding: 16px;
   position: relative;
 
@@ -50,7 +53,7 @@
 }
 .accordionCheck:checked + .accordionLabel:after{
     content: '';
-    background-image: url("/media/icon_01.png");
+    background-image: url("/media/Light_00.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

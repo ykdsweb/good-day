@@ -17,11 +17,11 @@ export default function JohnSNS() {
             <div className={styles.instagram}></div>
           </a>
         </Link>
-        {/* <Link href={"/"} passHref>
+        <Link href={"https://lin.ee/eYG7zAE"} passHref>
           <a>
             <div className={styles.line}></div>
           </a>
-        </Link> */}
+        </Link>
       </div>
     </>
   );

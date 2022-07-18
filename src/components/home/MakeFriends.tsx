@@ -41,9 +41,9 @@ const MakeFriends: React.FC = () => {
               </a>
             </Link>
             <div className={styles.next}>
-              <Link href={"/recruit"} passHref>
+              <Link href={"https://page.line.me/153jsnax?openQrModal=true"} passHref>
                 <a className={styles.nextInner}>
-                  <span className={styles.nextInnerIn}>View More</span>
+                  <span className={styles.nextInnerIn}>Add Friends</span>
                 </a>
               </Link>
             </div>
