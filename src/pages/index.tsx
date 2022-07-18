@@ -9,6 +9,7 @@ import Styles from "../components/gallery/styles";
 import type { Article } from "../../types/article";
 import ReactCarousel from "../components/home/Carousel";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
+import MakeFriends from "../components/home/MakeFriends";
 
 type Props = {
   articles: Array<Article>;
@@ -77,6 +78,7 @@ export default function Home({ articles }: Props) {
           ))}
         </div>
         <Styles />
+        <MakeFriends />
         <Works />
       </div>
     </>
