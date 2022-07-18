@@ -189,9 +189,6 @@ export default function NakashimaGuidelines() {
           </tr>
         </tbody>
       </table>
-      <>
-        <FAQ />
-      </>
     </div>
   );
 }
