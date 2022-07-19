@@ -2,13 +2,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
-import Works from "../components/home/Works";
 import SEO from "../components/layouts/SEO";
+import Works from "../components/home/Works";
+import Staffs from "../components/staff/Staffs";
 import styles from "../styles/Home.module.scss";
 import Styles from "../components/gallery/styles";
 import type { Article } from "../../types/article";
 import ReactCarousel from "../components/home/Carousel";
 import MakeFriends from "../components/home/MakeFriends";
+import NakashimaShopInfo from "../components/shop/Nakashima";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
 type Props = {
@@ -77,9 +79,11 @@ export default function Home({ articles }: Props) {
             </div>
           ))}
         </div>
+        <Staffs />
         <Styles />
         <MakeFriends />
         <Works />
+        <NakashimaShopInfo />
       </div>
     </>
   );

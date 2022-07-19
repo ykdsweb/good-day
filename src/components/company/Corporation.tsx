@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import MapPage from "../../components/company/MapPage";
 import styles from "../../styles/Company/Company.module.scss";
 
 export default function Corporation() {

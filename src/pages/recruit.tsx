@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import MapPage from "../components/company/MapPage";
 import SEO from "../components/layouts/SEO";
 import Recruitment from "../components/recruit/Recruitment";
 
