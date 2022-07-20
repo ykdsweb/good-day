@@ -17,6 +17,14 @@ export default function Nakashima() {
           </tbody>
           <tbody>
             <tr className={styles.menuTableTr}>
+              <th className={styles.menuTableTh}>会員募集</th>
+              <td className={styles.menuTableTd}>
+                現在応募は受け付けていません。
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>所在地</th>
               <td className={styles.menuTableTd}>
                 〒710-0803 岡山県倉敷市中島795-1

@@ -3,16 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Gallery/Gallery.module.scss";
 
-const NamiStyles: React.FC = () => {
+const MikaStyles: React.FC = () => {
   return (
     <>
       <ul className={styles.flex}>
-        <Link href={"/stylist/nami"}>
+        <Link href={"/stylist/mika"}>
           <a>
             <li className={styles.stylistImage}>
               <Image
                 className={styles.stylistImageHover}
-                src={"/styles/Nami_00.jpg"}
+                src={"/styles/Mika_00.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
                 width={178}
@@ -21,12 +21,12 @@ const NamiStyles: React.FC = () => {
             </li>
           </a>
         </Link>
-        <Link href={"/stylist/nami"}>
+        <Link href={"/stylist/mika"}>
           <a>
             <li className={styles.stylistImage}>
               <Image
                 className={styles.stylistImageHover}
-                src={"/styles/Nami_01.jpg"}
+                src={"/styles/Mika_01.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
                 width={178}
@@ -35,12 +35,12 @@ const NamiStyles: React.FC = () => {
             </li>
           </a>
         </Link>
-        <Link href={"/stylist/nami"}>
+        <Link href={"/stylist/mika"}>
           <a>
             <li className={styles.stylistImage}>
               <Image
                 className={styles.stylistImageHover}
-                src={"/styles/Nami_02.jpg"}
+                src={"/styles/Mika_02.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
                 width={178}
@@ -54,4 +54,4 @@ const NamiStyles: React.FC = () => {
   );
 };
 
-export default NamiStyles;
+export default MikaStyles;

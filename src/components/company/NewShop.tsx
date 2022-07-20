@@ -17,32 +17,39 @@ export default function NewShop() {
           </tbody>
           <tbody>
             <tr className={styles.menuTableTr}>
-              <th className={styles.menuTableTh}>所在地</th>
-              <td className={styles.menuTableTd}>未定</td>
+              <th className={styles.menuTableTh}>会員募集</th>
+              <td className={styles.menuTableTd}>応募受付中</td>
             </tr>
           </tbody>
           <tbody>
             <tr className={styles.menuTableTr}>
-              <th className={styles.menuTableTh}>Tel</th>
-              <td className={styles.menuTableTd}>未定</td>
+              <th className={styles.menuTableTh}>応募方法</th>
+              <td className={styles.menuTableTd}>
+                <div className={styles.flex}>
+                  <div className={styles.nemuVertical}>
+                    公式LINEよりご連絡ください。
+                  </div>
+                  <Link href={"https://line.me/R/ti/p/%40511gsugf"} passHref>
+                    <a>
+                      <div className={styles.line}></div>
+                    </a>
+                  </Link>
+                </div>
+              </td>
             </tr>
           </tbody>
           <tbody>
             <tr className={styles.menuTableTr}>
-              <th className={styles.menuTableTh}>Mail</th>
-              <td className={styles.menuTableTd}>info@goodday-salon.jp</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr className={styles.menuTableTr}>
-              <th className={styles.menuTableTh}>代表取締役</th>
-              <td className={styles.menuTableTd}>見垣 義則</td>
+              <th className={styles.menuTableTh}>Open日時</th>
+              <td className={styles.menuTableTd}>2022年11月を予定</td>
             </tr>
           </tbody>
           <tbody>
             <tr className={styles.menuTablLast}>
-              <th className={styles.menuTableTh}>事業内容</th>
-              <td className={styles.menuTableTd}>美容業</td>
+              <th className={styles.menuTableTh}>所在地</th>
+              <td className={styles.menuTableTd}>
+                未定(決まり次第お知らせします)
+              </td>
             </tr>
           </tbody>
         </table>
