@@ -6,7 +6,7 @@ import styles from "../../styles/Shop/Nakashima.module.scss";
 export default function NakashimaShopInfo() {
   return (
     <>
-      <div id="Nakashima" className={styles.menu}>
+      <div id="Nakashima" className={styles.main}>
         <h2 className={styles.menuTitle}>倉敷中島店</h2>
         <table className={styles.menuArea}>
           <tbody>
