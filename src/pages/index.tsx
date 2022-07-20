@@ -8,7 +8,7 @@ import Staffs from "../components/staff/Staffs";
 import styles from "../styles/Home.module.scss";
 import Styles from "../components/gallery/styles";
 import type { Article } from "../../types/article";
-import ReactCarousel from "../components/home/Carousel";
+import TopCarousel from "../components/home/TopCarousel";
 import MakeFriends from "../components/home/MakeFriends";
 import NakashimaShopInfo from "../components/shop/Nakashima";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
@@ -33,7 +33,7 @@ export default function Home({ articles }: Props) {
       />
       <HamburgerMenu />
       <div className={styles.mainHome}>
-        <ReactCarousel />
+        <TopCarousel />
         <div className={styles.articleArea}>
           <h2 className={styles.articleMainTitle}>News &amp; Topics</h2>
           {articles.map((article) => (

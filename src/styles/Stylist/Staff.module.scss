@@ -95,7 +95,7 @@
 .flex {
   display: flex;
   justify-content: space-around;
-  padding: 2rem 0;
+  padding: 0;
 
   @media (max-width: 767px) {
     display: block;
