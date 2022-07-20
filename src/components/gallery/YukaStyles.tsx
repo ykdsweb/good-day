@@ -12,7 +12,7 @@ const YukaStyles: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 className={styles.stylistImageHover}
-                src={"/styles/Nami_03.jpg"}
+                src={"/styles/Yuka_00.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
                 width={178}
@@ -26,7 +26,7 @@ const YukaStyles: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 className={styles.stylistImageHover}
-                src={"/styles/Nami_01.jpg"}
+                src={"/styles/Yuka_01.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
                 width={178}
@@ -40,7 +40,7 @@ const YukaStyles: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 className={styles.stylistImageHover}
-                src={"/styles/Nami_00.jpg"}
+                src={"/styles/Yuka_02.jpg"}
                 objectFit="contain"
                 alt={"の画像です"}
                 width={178}

@@ -23,7 +23,7 @@ const Styles: React.FC = () => {
         <p className={styles.featuresMainSubTitle}>スタイル一覧</p>
         <NamiStyles />
         {/* <MahoStyles /> */}
-        {/* <YukaStyles /> */}
+        <YukaStyles />
         <MaiStyles />
         {/* <IkemotoStyles /> */}
         <FujiiStyles />

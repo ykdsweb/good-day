@@ -10,4 +10,4 @@ export const routes = [
     { name: "PrivacyPolicy", link: "/privacypolicy" },
     { name: "SitePolicy", link: "/sitepolicy" }
 
-  ]
+  ];
