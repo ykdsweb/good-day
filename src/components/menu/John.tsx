@@ -56,12 +56,16 @@ export default function John() {
       </table>
 
       <h2 className={styles.menuTitle}>カットカラー</h2>
-      <p className={styles.menuDetail}>(カットなしの場合、Sh.Br代 + ¥2,000が必要です)</p>
+      <p className={styles.menuDetail}>
+        (カットなしの場合、Sh.Br代 + ¥2,000が必要です)
+      </p>
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>リタッチ</th>
-            <td className={styles.menuTableTd}>(神田指名のカラーリングから30日以内の場合)</td>
+            <td className={styles.menuTableTd}>
+              (神田指名のカラーリングから30日以内の場合)
+            </td>
             <td className={styles.menuTableTd}>¥3,500</td>
             <td className={styles.menuTableTd}>90分</td>
           </tr>
@@ -85,7 +89,9 @@ export default function John() {
         <tbody>
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>インナーカラー</th>
-            <td className={styles.menuTableTd}>※デザインによって料金が変動します</td>
+            <td className={styles.menuTableTd}>
+              ※デザインによって料金が変動します
+            </td>
             <td className={styles.menuTableTd}>¥4,000〜¥6,000</td>
             <td className={styles.menuTableTd}>150分</td>
           </tr>
@@ -93,7 +99,9 @@ export default function John() {
         <tbody>
           <tr className={styles.menuTablLast}>
             <th className={styles.menuTableTh}>ホイルカラー</th>
-            <td className={styles.menuTableTd}>※デザインによって料金が変動します</td>
+            <td className={styles.menuTableTd}>
+              ※デザインによって料金が変動します
+            </td>
             <td className={styles.menuTableTd}>¥¥3,300〜¥6,000</td>
             <td className={styles.menuTableTd}>60分〜</td>
           </tr>
@@ -101,7 +109,9 @@ export default function John() {
       </table>
 
       <h2 className={styles.menuTitle}>パーマ</h2>
-      <p className={styles.menuDetail}>(カットなしの場合、Sh.Br代 + ¥2,000が必要です)</p>
+      <p className={styles.menuDetail}>
+        (カットなしの場合、Sh.Br代 + ¥2,000が必要です)
+      </p>
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTableTr}>
@@ -138,7 +148,9 @@ export default function John() {
       </table>
 
       <h2 className={styles.menuTitle}>縮毛矯正</h2>
-      <p className={styles.menuDetail}>(カットなしの場合、Sh.Br代 + ¥2,000が必要です)</p>
+      <p className={styles.menuDetail}>
+        (カットなしの場合、Sh.Br代 + ¥2,000が必要です)
+      </p>
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTableTr}>
@@ -170,9 +182,7 @@ export default function John() {
       <table className={styles.menuArea}>
         <tbody>
           <tr className={styles.menuTablLast}>
-            <th className={styles.menuTableTh}>
-              ☆極上☆酸性シルクストレート
-            </th>
+            <th className={styles.menuTableTh}>☆極上☆酸性シルクストレート</th>
             <td className={styles.menuTableTd}>※ロング料金 + ¥2,000</td>
             <td className={styles.menuTableTd}>¥20,000〜</td>
             <td className={styles.menuTableTd}>210分〜</td>
