@@ -1,8 +1,14 @@
 .features {
+  position: relative;
+  min-height: 100%;
   background-image: url("/media/Service_00.png");
   background-size: cover;
-  margin: 5.8rem auto ;
-  width: 80%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+	z-index: 2;
+  margin: 5.8rem auto 0;
+  width: 100%;
   height: auto;
   padding: 2rem;
 
@@ -11,6 +17,10 @@
     margin-top: 7.8rem;
     margin-bottom: 0;
   }
+}
+.featuresArea {
+  margin: 0 auto;
+  width: 90%;
 }
 .featuresMainTitle {
   font-size: 32px;
