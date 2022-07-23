@@ -16,8 +16,8 @@ export default function Recruitment() {
             src={"/media/main_test_00.jpg"}
             objectFit="contain"
             alt={"Recruitメインイメージ"}
-            width={1000}
-            height={1000}
+            width={1920}
+            height={1920}
           />
         </div>
         <div className={styles.mainTitleArea}>
