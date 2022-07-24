@@ -90,7 +90,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>ノンダメージカラー</th>
-              <td className={styles.menuTableTd}>ケア剤を使用し、ダメージを軽減</td>
+              <td className={styles.menuTableTd}>
+                ケア剤を使用し、ダメージを軽減
+              </td>
               <td className={styles.menuTableTd}>¥8,800〜</td>
               <td className={styles.menuTableTd}>90分</td>
             </tr>
@@ -129,7 +131,9 @@ export default function Mai() {
           </tbody>
           <tbody>
             <tr className={styles.menuTableTr}>
-              <th className={styles.menuTableTh}>デザインカラー ウィービング</th>
+              <th className={styles.menuTableTh}>
+                デザインカラー ウィービング
+              </th>
               <td className={styles.menuTableTd}>(ハーフ)</td>
               <td className={styles.menuTableTd}>¥4,400〜</td>
               <td className={styles.menuTableTd}>30分</td>
@@ -137,7 +141,9 @@ export default function Mai() {
           </tbody>
           <tbody>
             <tr className={styles.menuTableTr}>
-              <th className={styles.menuTableTh}>デザインカラー ウィービング</th>
+              <th className={styles.menuTableTh}>
+                デザインカラー ウィービング
+              </th>
               <td className={styles.menuTableTd}>(フル)</td>
               <td className={styles.menuTableTd}>¥8,800〜</td>
               <td className={styles.menuTableTd}>60分</td>
@@ -161,7 +167,9 @@ export default function Mai() {
           </tbody>
           <tbody>
             <tr className={styles.menuTablLast}>
-              <th className={styles.menuTableTh}>ケアブリーチメンテナンスカラー</th>
+              <th className={styles.menuTableTh}>
+                ケアブリーチメンテナンスカラー
+              </th>
               <td className={styles.menuTableTd}>(※1ヶ月以内)</td>
               <td className={styles.menuTableTd}>¥3,300〜</td>
               <td className={styles.menuTableTd}>90分</td>
@@ -169,7 +177,9 @@ export default function Mai() {
           </tbody>
         </table>
         <h2 className={styles.menuTitle}>パーマ</h2>
-        <p className={styles.menuDetail}>カット、シャンプー、ブロー込み、長さ料金なし</p>
+        <p className={styles.menuDetail}>
+          カット、シャンプー、ブロー込み、長さ料金なし
+        </p>
         <table className={styles.menuArea}>
           <tbody>
             <tr className={styles.menuTableTr}>
@@ -190,7 +200,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTablLast}>
               <th className={styles.menuTableTh}>ノンダメージパーマ</th>
-              <td className={styles.menuTableTd}>ケア剤を使用し、ダメージを軽減</td>
+              <td className={styles.menuTableTd}>
+                ケア剤を使用し、ダメージを軽減
+              </td>
               <td className={styles.menuTableTd}>¥13,200</td>
               <td className={styles.menuTableTd}>150分</td>
             </tr>
@@ -198,7 +210,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTablLast}>
               <th className={styles.menuTableTh}>デジタルパーマ</th>
-              <td className={styles.menuTableTd}>カット、シャンプー、ブロー込み</td>
+              <td className={styles.menuTableTd}>
+                カット、シャンプー、ブロー込み
+              </td>
               <td className={styles.menuTableTd}>¥14,300</td>
               <td className={styles.menuTableTd}>150分</td>
             </tr>
@@ -218,7 +232,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>オーダーストレート</th>
-              <td className={styles.menuTableTd}>アイロンを使った全体ストレート</td>
+              <td className={styles.menuTableTd}>
+                アイロンを使った全体ストレート
+              </td>
               <td className={styles.menuTableTd}>¥17,620〜</td>
               <td className={styles.menuTableTd}>210分</td>
             </tr>
@@ -233,7 +249,9 @@ export default function Mai() {
           </tbody>
         </table>
         <h2 className={styles.menuTitle}>トリートメント</h2>
-        <p className={styles.menuDetail}>シャンプー、ブロー込み、長さ料金あり</p>
+        <p className={styles.menuDetail}>
+          シャンプー、ブロー込み、長さ料金あり
+        </p>
         <table className={styles.menuArea}>
           <tbody>
             <tr className={styles.menuTableTr}>
@@ -246,7 +264,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>システムTR</th>
-              <td className={styles.menuTableTd}>栄養補給をするトリートメント</td>
+              <td className={styles.menuTableTd}>
+                栄養補給をするトリートメント
+              </td>
               <td className={styles.menuTableTd}>¥4,400〜</td>
               <td className={styles.menuTableTd}>60分</td>
             </tr>
@@ -274,7 +294,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>リラクシングスパ</th>
-              <td className={styles.menuTableTd}>アロマスパか炭酸スパが選択可能</td>
+              <td className={styles.menuTableTd}>
+                アロマスパか炭酸スパが選択可能
+              </td>
               <td className={styles.menuTableTd}>¥3,300</td>
               <td className={styles.menuTableTd}>15分</td>
             </tr>
@@ -330,7 +352,9 @@ export default function Mai() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>ポイントメイク</th>
-              <td className={styles.menuTableTd}>ベースメイク以外メイクです。</td>
+              <td className={styles.menuTableTd}>
+                ベースメイク以外メイクです。
+              </td>
               <td className={styles.menuTableTd}>¥2,200</td>
               <td className={styles.menuTableTd}>30分</td>
             </tr>
