@@ -72,7 +72,7 @@ export default function Ikemoto() {
               <td className={styles.menuTableTd}>
                 ※前回の来店から30日以内、ノンジアミンカラーは+¥500、ブロー別、新規の方不可
               </td>
-              <td className={styles.menuTableTd}>¥4,600</td>0
+              <td className={styles.menuTableTd}>¥4,600</td>
               <td className={styles.menuTableTd}>90分</td>
             </tr>
           </tbody>
@@ -256,16 +256,16 @@ export default function Ikemoto() {
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>スタンダード縮毛矯正</th>
               <td className={styles.menuTableTd}>ショート、カット別</td>
-              <td className={styles.menuTableTd}>¥</td>
-              <td className={styles.menuTableTd}>分</td>
+              <td className={styles.menuTableTd}>¥13,500</td>
+              <td className={styles.menuTableTd}>150分</td>
             </tr>
           </tbody>
           <tbody>
             <tr>
               <th className={styles.menuTableTh}>スタンダード縮毛矯正</th>
               <td className={styles.menuTableTd}>ミディアム、カット別</td>
-              <td className={styles.menuTableTd}>¥</td>
-              <td className={styles.menuTableTd}>分</td>
+              <td className={styles.menuTableTd}>¥15,500</td>
+              <td className={styles.menuTableTd}>150分</td>
             </tr>
           </tbody>
           <tbody>
