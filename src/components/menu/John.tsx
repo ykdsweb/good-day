@@ -102,7 +102,7 @@ export default function John() {
             <td className={styles.menuTableTd}>
               ※デザインによって料金が変動します
             </td>
-            <td className={styles.menuTableTd}>¥¥3,300〜¥6,000</td>
+            <td className={styles.menuTableTd}>¥3,300〜¥6,000</td>
             <td className={styles.menuTableTd}>60分〜</td>
           </tr>
         </tbody>
@@ -117,7 +117,7 @@ export default function John() {
           <tr className={styles.menuTableTr}>
             <th className={styles.menuTableTh}>プレミアムパーマ</th>
             <td className={styles.menuTableTd}>※自然な強さのパーマ</td>
-            <td className={styles.menuTableTd}>¥¥6,300</td>
+            <td className={styles.menuTableTd}>¥6,300</td>
             <td className={styles.menuTableTd}>120分</td>
           </tr>
         </tbody>
@@ -125,7 +125,7 @@ export default function John() {
           <tr>
             <th className={styles.menuTableTh}>プレミアムハードパーマ</th>
             <td className={styles.menuTableTd}>※強めのパーマ</td>
-            <td className={styles.menuTableTd}>¥¥7,800〜¥10,800</td>
+            <td className={styles.menuTableTd}>¥7,800〜¥10,800</td>
             <td className={styles.menuTableTd}>150分</td>
           </tr>
         </tbody>
