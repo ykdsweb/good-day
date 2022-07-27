@@ -68,7 +68,7 @@ export default function NakashimaShopInfo() {
           <tbody>
             <tr className={styles.menuTableTr}>
               <th className={styles.menuTableTh}>席数</th>
-              <td className={styles.menuTableTd}>7つ</td>
+              <td className={styles.menuTableTd}>7席</td>
             </tr>
           </tbody>
           <tbody>
